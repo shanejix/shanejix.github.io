@@ -1,0 +1,22 @@
+{
+    
+    "view":{
+        "home":null,
+        "posts":[],
+        "user":null,
+        "nav":{},
+        "tag":[],
+        "about":null,
+        "hotposts":[]
+    },
+    "detail":{
+
+    },
+    "admin":{
+
+    },
+    "global":{
+
+    }
+
+}
