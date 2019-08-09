@@ -9,6 +9,7 @@ import Archive from './pages/archive'
 import Articles from './pages/articles'
 import Message from './pages/message'
 import Timeline from './pages/timeline'
+import Detail from './pages/detail'
 
 class App extends React.Component {
 	render() {
@@ -22,6 +23,7 @@ class App extends React.Component {
 						<Route path='/articles' exact component={Articles} />
 						<Route path='/message' exact component={Message} />
 						<Route path='/timeline' exact component={Timeline} />
+						<Route path='/detail' exact component={Detail} />
 						<Redirect to='/' />	
 					</Switch>
 				</Layouts >

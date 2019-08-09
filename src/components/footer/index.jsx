@@ -1,14 +1,18 @@
-import React from 'react'
-import { Link } from 'react-router-dom'
+import React from "react";
+import { Link } from "react-router-dom";
 
-import './index.less'
+import "./index.less";
 
-export default class Footer extends React.Component{
-  render() {
-    return (
-      <footer className='footer'>
-        design by <a href ='https://github.com/shanejix'>shanejix</a>
-      </footer>
-    )
-  }
+export default class Footer extends React.Component {
+    componentDidMount() {
+        console.log("Footer componentDidMount()");
+    }
+
+    render() {
+        return (
+            <footer className="footer">
+                design by <a href="https://github.com/shanejix">shanejix</a>
+            </footer>
+        );
+    }
 }

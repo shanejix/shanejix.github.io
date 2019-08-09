@@ -6,31 +6,31 @@ import "./index.less";
 export default class TimeLine extends React.Component {
     render() {
         return (
-            <section className ='timeline'>
-                <Timeline className='timeline-group' mode="alternate" >
-                    <Timeline.Item>
-                    aperiam, eaque ipsa quae ab illo inventore veritatis et
-                        quasi architecto beatae vitae dicta sunt explicabo.
-                        Sed ut perspiciatis unde omnis iste natus error sit
-                        voluptatem accusantium doloremque laudantium, totam rem
-                        aperiam, eaque ipsa quae ab illo inventore veritatis et
-                        quasi architecto beatae vitae dicta sunt explicabo.
-                        Sed ut perspiciatis unde omnis iste natus error sit
-                        voluptatem accusantium doloremque laudantium, totam rem
-                        aperiam, eaque ipsa quae ab illo inventore veritatis et
-                        quasi architecto beatae vitae dicta sunt explicabo.
+            <section className="timeline">
+                <Timeline className="timeline-group" mode="alternate">
+                    <Timeline.Item>GitHub isuess blog</Timeline.Item>
+                    <Timeline.Item>博客发布平台</Timeline.Item>
+                    <Timeline.Item color="green">express</Timeline.Item>
+                    <Timeline.Item color="green">todomvc</Timeline.Item>
+                    <Timeline.Item
+                        dot={
+                            <Icon
+                                type="clock-circle-o"
+                                style={{ fontSize: "16px" }}
+                            />
+                        }
+                    >
+                        2018，重入前端，翻天覆地
                     </Timeline.Item>
-                    <Timeline.Item color="green">
-                    aperiam, eaque ipsa quae ab illo inventore veritatis et
-                        quasi architecto beatae vitae dicta sunt explicabo.
-                        Sed ut perspiciatis unde omnis iste natus error sit
-                        voluptatem accusantium doloremque laudantium, totam rem
-                        aperiam, eaque ipsa quae ab illo inventore veritatis et
-                        quasi architecto beatae vitae dicta sunt explicabo.
-                        Sed ut perspiciatis unde omnis iste natus error sit
-                        voluptatem accusantium doloremque laudantium, totam rem
-                        aperiam, eaque ipsa quae ab illo inventore veritatis et
-                        quasi architecto beatae vitae dicta sunt explicabo.
+                    <Timeline.Item color="red">迷度</Timeline.Item>
+                    <Timeline.Item color="red">迷度</Timeline.Item>
+                    <Timeline.Item color="red">迷度</Timeline.Item>
+                    <Timeline.Item color="red">迷度</Timeline.Item>
+                    <Timeline.Item color="red">迷度</Timeline.Item>
+                    <Timeline.Item color="red">迷度</Timeline.Item>
+                    <Timeline.Item color="red">迷度</Timeline.Item>
+                    <Timeline.Item>
+                        中途入了，学英语的坑，以听为首，没有然后
                     </Timeline.Item>
                     <Timeline.Item
                         dot={
@@ -40,56 +40,7 @@ export default class TimeLine extends React.Component {
                             />
                         }
                     >
-                        Sed ut perspiciatis unde omnis iste natus error sit
-                        voluptatem accusantium doloremque laudantium, totam rem
-                        aperiam, eaque ipsa quae ab illo inventore veritatis et
-                        quasi architecto beatae vitae dicta sunt explicabo.
-                        Sed ut perspiciatis unde omnis iste natus error sit
-                        voluptatem accusantium doloremque laudantium, totam rem
-                        aperiam, eaque ipsa quae ab illo inventore veritatis et
-                        quasi architecto beatae vitae dicta sunt explicabo.
-                        Sed ut perspiciatis unde omnis iste natus error sit
-                        voluptatem accusantium doloremque laudantium, totam rem
-                        aperiam, eaque ipsa quae ab illo inventore veritatis et
-                        quasi architecto beatae vitae dicta sunt explicabo.
-                        Sed ut perspiciatis unde omnis iste natus error sit
-                        voluptatem accusantium doloremque laudantium, totam rem
-                        aperiam, eaque ipsa quae ab illo inventore veritatis et
-                        quasi architecto beatae vitae dicta sunt explicabo.
-                    </Timeline.Item>
-                    <Timeline.Item color="red">
-                        Network problems being solved 2015-09-01
-                    </Timeline.Item>
-                    <Timeline.Item>
-                    aperiam, eaque ipsa quae ab illo inventore veritatis et
-                        quasi architecto beatae vitae dicta sunt explicabo.
-                        Sed ut perspiciatis unde omnis iste natus error sit
-                        voluptatem accusantium doloremque laudantium, totam rem
-                        aperiam, eaque ipsa quae ab illo inventore veritatis et
-                        quasi architecto beatae vitae dicta sunt explicabo.
-                        Sed ut perspiciatis unde omnis iste natus error sit
-                        voluptatem accusantium doloremque laudantium, totam rem
-                        aperiam, eaque ipsa quae ab illo inventore veritatis et
-                        quasi architecto beatae vitae dicta sunt explicabo.
-                    </Timeline.Item>
-                    <Timeline.Item
-                        dot={
-                            <Icon
-                                type="clock-circle-o"
-                                style={{ fontSize: "16px" }}
-                            />
-                        }
-                    >
-                       aperiam, eaque ipsa quae ab illo inventore veritatis et
-                        quasi architecto beatae vitae dicta sunt explicabo.
-                        Sed ut perspiciatis unde omnis iste natus error sit
-                        voluptatem accusantium doloremque laudantium, totam rem
-                        aperiam, eaque ipsa quae ab illo inventore veritatis et
-                        quasi architecto beatae vitae dicta sunt explicabo.
-                        Sed ut perspiciatis unde omnis iste natus error sit
-                        voluptatem accusantium doloremque laudantium, totam rem
-                        aperiam, eaque ipsa quae ab illo inventore veritatis et
-                        quasi architecto beatae vitae dicta sunt explicabo.
+                        2015年接触前端
                     </Timeline.Item>
                 </Timeline>
             </section>

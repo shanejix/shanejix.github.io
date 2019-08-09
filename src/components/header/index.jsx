@@ -3,7 +3,7 @@ import { withRouter, Link } from "react-router-dom";
 import { Menu, Icon, Button, Modal } from "antd";
 
 import "./index.less";
-import logo from "../../assets/img/logo.ico";
+import logo from "../../assets/img/user.jfif";
 import categories from "../../config/categoryLists";
 
 const { confirm } = Modal;
@@ -39,6 +39,11 @@ class Header extends React.Component {
     componentWillMount() {
         this.menuLists = this.mapCategories();
     }
+
+    componentDidMount() {
+        console.log('header componentDidMount()')
+    }
+    
     render() {
         const path = this.props.location.pathname;
         console.log(path);
