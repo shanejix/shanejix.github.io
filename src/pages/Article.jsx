@@ -10,8 +10,8 @@ export default function Article() {
       <Header></Header>
       <main
         style={{
-          marginLeft: "10vw",
-          marginTop: "-15vh"
+          marginLeft: "10vw"
+          // marginTop: "-15vh"
         }}
       >
         <Detail></Detail>

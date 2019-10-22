@@ -1,6 +1,8 @@
 .detail {
   width: 80vw;
   padding: 80px;
+  padding-top: 20px;
+  background-color: white;
 }
 .title {
   font-size: 3em;
