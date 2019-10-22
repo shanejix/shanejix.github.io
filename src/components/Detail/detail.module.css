@@ -1,0 +1,35 @@
+.detail {
+  width: 80vw;
+  padding: 80px;
+}
+.title {
+  font-size: 3em;
+  margin-top: 1.2em;
+  margin-bottom: 0.6em;
+  line-height: 1.35;
+  font-weight: 300;
+  color: #000;
+}
+.info {
+  margin-bottom: 30px;
+  color: #bbb;
+  font-size: 1em;
+  font-style: italic;
+  font-weight: 400;
+}
+.info span {
+  padding-right: 20px;
+}
+
+.content {
+  width: 100%;
+
+  overflow: hidden;
+  color: #666;
+  font-size: 1.5em;
+}
+.comment {
+  margin-top: 10em;
+  color: #666;
+  font-size: 1.5em;
+}

@@ -1,0 +1,24 @@
+.contact {
+  padding-top: 150px;
+  width: 80vw;
+  font-weight: 700;
+}
+
+.contact h2 {
+  
+  color: #000;
+  line-height: 1.35;
+  font-size: 2.3em;
+  margin-bottom: 0;
+}
+
+.contact p {
+  padding-top: 80px;
+  margin-bottom: 10px;
+
+  width: 40vw;
+  line-height: 1.8;
+  font-size: 1.6em;
+
+  color: #666666;
+}

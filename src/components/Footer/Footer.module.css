@@ -1,0 +1,14 @@
+.footer{
+  padding: 100px 0;
+  background-image: url('../../assets/footer.svg');
+  background-size: cover;
+  background-position: top;
+  background-repeat: no-repeat;
+}
+.footer p{
+  padding: 30px 0;
+  margin: 0;
+  font-size: 1.2em;
+  text-align: center;
+  line-height: 1.2;
+}
