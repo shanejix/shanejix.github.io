@@ -1,0 +1,15 @@
+.header {
+  background-color: white;
+  height: 10vh;
+  width: 100vw;
+  line-height: 10vh;
+  padding-left: 10vw;
+}
+.logo {
+  width: 3.5em;
+  height: 3.5em;
+  border: 3px solid #eee;
+}
+.advise {
+  margin-left: 70vw;
+}
