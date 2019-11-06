@@ -18,19 +18,19 @@ const socialLinksConfig = [
   {
     key: Math.random(),
     type: 'twitter',
-    href: 'https://twitter.com/shanejix',
+    href: 'https://twitter.com/@shanejixx',
     display: true
   },
   {
     key: Math.random(),
     type: 'medium',
-    href: 'https://medium.com/shanejix',
+    href: 'https://medium.com/@shanejix',
     display: true
   },
   {
     key: Math.random(),
     type: 'youtube',
-    href: 'https://youtube.com/shanejix',
+    href: 'https://youtube.com/channel/UCtcuD0729Okasj9eEF8v_Iw?view_as=subscriber',
     display: true
   },
   {
