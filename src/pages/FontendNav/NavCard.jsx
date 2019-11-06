@@ -5,7 +5,8 @@ import { Card, Icon, Avatar } from "antd";
 const { Meta } = Card;
 
 function NavCard({ title, desc, img, actions }) {
-  
+  img =img || "https://zos.alipayobjects.com/rmsportal/ODTLcjxAfvqbxHnVXCYX.png";
+
   const actionsArr = actions.map((action, idx) => {
     return (
       <Icon
@@ -24,21 +25,10 @@ function NavCard({ title, desc, img, actions }) {
         width: 300,
         margin: 10
       }}
-      // cover={
-      //   <img
-      //     alt="example"
-      //     src="https://gw.alipayobjects.com/zos/rmsportal/JiqGstEfoWAOHiTxclqi.png"
-      //   />
-      // }
+      // cover={<img alt="" src="" />}
       actions={[...actionsArr]}
     >
-      <Meta
-        avatar={
-          <Avatar src="https://zos.alipayobjects.com/rmsportal/ODTLcjxAfvqbxHnVXCYX.png" />
-        }
-        title={title}
-        description={desc}
-      />
+      <Meta avatar={<Avatar src={img} />} title={title} description={desc} />
     </Card>
   );
 }

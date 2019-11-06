@@ -1,5 +1,5 @@
 import React from 'react'
-import { Card } from 'antd'
+import { Card, Icon } from 'antd'
 
 import Header from './Header'
 import Footer from '../../components/Footer/Footer'
@@ -9,9 +9,7 @@ import fontendnavs from '../../config/fontendnavs.config'
 
 import NavCard from './NavCard'
 
-const tagsMapToId = {
-  "1": "React Ecological"
-};
+
 
 export default function FontendNav() {
   return (
@@ -24,15 +22,21 @@ export default function FontendNav() {
 
         }}>
 
-        {fontendnavs && fontendnavs.map(ele => {
-          if (ele.id === '1') {
 
+
+        {fontendnavs && fontendnavs.map(ele => {
+
+
+          if (ele.id === '') {
             return (
+
               <div style={{
-                padding: '30px',
+                padding: 0,
+                margin: '20px auto',
 
                 width: '100%'
               }}>
+
                 <Card
                   key={ele.id}
                   title={ele.tag}
@@ -42,56 +46,119 @@ export default function FontendNav() {
 
                   }}
                 >
-                  <div
+                  <h2
                     style={{
-                      // margin: '0 -2em',
-                      padding: '0 4.5em',
-                      display: 'flex',
-                      flexWrap: 'wrap',
-                      justifyContent: 'space-beteew'
+                      fontSize: '1.3em'
                     }}
                   >
+                    React technology stack
+                  </h2>
+                  <div
+                    style={{
+                      fontSize: '1.2em'
+                    }}
+                  >
+                    Record the daily use of warehouses, tools, and materials for easy follow-up.
+                    <span
+                      style={{
+                        paddingLeft: '10px',
+                        paddingRight: '10px'
+                      }}
+                    >
 
-                    {ele.list && ele.list.map(nav => {
-                      return (
-                        <NavCard
-                          key={nav.title}
-                          title={nav.title}
-                          desc={nav.desc}
-                          img={nav.img}
-                          actions={nav.actions}
-                        />
-                      )
-                    })}
+                      <Icon
+                        style={{
+                          fontSize: '1.3em'
+                        }}
+                        type="home"
+                      />
 
+                      :Home
+                    </span>
+                    <span
+                      style={{
+                        paddingRight: '10px'
+                      }}
+                    >
+
+                      <Icon
+                        style={{
+                          fontSize: '1.3em'
+                        }}
+                        type="book"
+                      />
+                      :Document
+                    </span>
+                    <span >
+
+                      <Icon
+                        style={{
+                          fontSize: '1.3em'
+                        }}
+                        type="github"
+                      />
+                      :Github
+                    </span>
                   </div>
 
                 </Card>
 
+
               </div>
+
             )
-
           }
 
-          if (ele.id === '2') {
+          return (
+            <div style={{
+              padding: 0,
+              margin: '20px auto',
 
-          }
+              width: '100%'
+            }}>
+              <Card
+                key={ele.id}
+                title={ele.tag}
+                bordered={false}
+                style={{
+                  backgroundColor: '#fff',
 
-          if (ele.id === '3') {
+                }}
+              >
+                <div
+                  style={{
+                    // margin: '0 -2em',
+                    padding: '0 auto',
+                    display: 'flex',
+                    flexWrap: 'wrap',
+                    justifyContent: 'space-around'
+                  }}
+                >
 
-          }
+                  {ele.list && ele.list.map(nav => {
+                    console.log(nav.img);
 
-          if (ele.id === '4') {
+                    return (
 
-          }
+                      <NavCard
 
-          if (ele.id === '5') {
+                        key={nav.title}
+                        title={nav.title}
+                        desc={nav.desc}
+                        img={nav.img}
+                        actions={nav.actions}
+                      />
 
-          }
+                    )
+                  })}
 
-          if (ele.id === '6') {
+                </div>
 
-          }
+              </Card>
+
+            </div>
+          )
+
 
         })}
 

@@ -55,7 +55,7 @@ const socialLinksConfig = [
 const routeConfig = [
   { key: Math.random(), title: 'Blog', href: '/posts', display: true },
   { key: Math.random(), title: 'Projects', href: '/', display: true },
-  { key: Math.random(), title: 'Fontend-Nav', href: '/fontendnav', display: true },
+  { key: Math.random(), title: 'FontendStack', href: '/fontendstack', display: true },
   { key: Math.random(), title: 'TimeLine', href: '/timeline', display: true },
   { key: Math.random(), title: 'Message', href: '/message', display: true },
   { key: Math.random(), title: 'Friends', href: '/friends', display: true },

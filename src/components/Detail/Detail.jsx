@@ -1,6 +1,7 @@
 import React from "react";
 import { connect } from "react-redux";
 import { withRouter } from "react-router-dom";
+import cx from "classnames";
 
 import style from "./detail.module.css";
 
@@ -202,13 +203,15 @@ class Detail extends React.Component {
           <span>{article.time}</span>
           <span>tags</span>
         </p>
-        <div
-          id="content"
-          className={style.content}
-          dangerouslySetInnerHTML={{
-            __html: article.body ? marked(article.body) : null
-          }}
-        />
+        <div className="content">
+          <div
+            id="content"
+            className={cx(style.content, "article-detail")}
+            dangerouslySetInnerHTML={{
+              __html: article.body ? marked(article.body) : null
+            }}
+          />
+        </div>
 
         <p className={style.comment}>如果你看不到评论，说明你没有科学上网</p>
       </div>
