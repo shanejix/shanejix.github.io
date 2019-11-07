@@ -202,6 +202,9 @@ class Detail extends React.Component {
         <p className={style.info}>
           <span>{article.time}</span>
           <span>tags</span>
+          <span>
+            文章链接：<a href={article.html_url}>{article.html_url}</a>
+          </span>
         </p>
         <div className="content">
           <div

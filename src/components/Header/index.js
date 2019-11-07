@@ -35,7 +35,7 @@ const socialLinksConfig = [
   },
   {
     type: 'reddit',
-    href: 'https://reddit.com/shanejix',
+    href: 'https://www.reddit.com/user/shanejix',
     display: true
   },
   {
