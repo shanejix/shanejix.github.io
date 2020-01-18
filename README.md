@@ -31,6 +31,5 @@
 
 ## 💫 Deploy
 
-[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/shanejix/shanejix.github.io)
+[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com)
 
-<!-- AUTO-GENERATED-CONTENT:END -->
