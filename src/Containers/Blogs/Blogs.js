@@ -1,7 +1,9 @@
 import React, { useState, useEffect } from "react";
 import ApolloClient from "apollo-boost";
 import { gql } from "apollo-boost";
-import BlogHome from "../../Components/BlogHome/BlogHome";
+import BlogHome from "../BlogPost/BlogPost";
+import Header from "../../Components/Header/Header";
+import BlogCard from "../../Components/BlogCard/BlogCard";
 import { config } from "../../config";
 
 function Blogs() {
@@ -33,7 +35,15 @@ function Blogs() {
                   title
                   body
                   bodyHTML
-                  bodyHTML
+                  bodyText
+                  number
+                  labels(first: 100) {
+                    nodes {
+                      color
+                      name
+                      id
+                    }
+                  }
                   author {
                     url
                     avatarUrl
@@ -48,19 +58,23 @@ function Blogs() {
         `
       })
       .then(result => {
-        setBlogsFunction(result.data.repository.issues.nodes)
-        console.log(result.data.repository.issues.nodes);
+        setBlogsFunction(result.data.repository.issues.nodes);
       });
   }
 
   function setBlogsFunction(array) {
     setBlogs(array);
   }
-  return <div>
-    {blogs.map((v, i) => {
-      return <BlogHome blog={v} key={i} />
-    })}
-  </div>;
+  return (
+    <div>
+      <Header />
+      <div className="blog-div-main">
+        {blogs.map((v, i) => {
+          return <BlogCard blog={v} key={i} />;
+        })}
+      </div>
+    </div>
+  );
 }
 
 export default Blogs;
