@@ -11,3 +11,7 @@ https://zhuanlan.zhihu.com/FrontendPerusal
 https://github.com/sl1673495/blogs/issues/37
 
 https://www.zhihu.com/question/61281984/answer/1306626251
+
+## tools
+
+https://dev.to/iainfreestone/50-developer-tools-to-make-your-life-a-little-easier-4oc5
