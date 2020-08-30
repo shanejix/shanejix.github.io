@@ -1,0 +1,17 @@
+name: GitHub Actions Build and Deploy Gatsby site
+on:
+  issue_comment:
+    types: [opened, created, edited, deleted, closed, reopened, labeled]
+jobs:
+  build-and-deploy:
+    name: gatsby deploy
+    runs-on: ubuntu-latest
+    steps:
+    - name: webhook
+      env:
+        MY_VAR: Hi there! My name is
+        FIRST_NAME: shane
+        MIDDLE_NAME: The
+        LAST_NAME: ji
+      run: |
+        curl -X POST -d {} https://api.netlify.com/build_hooks/5f4b02b383248d449bf6bcab
