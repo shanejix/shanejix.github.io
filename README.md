@@ -1,4 +1,4 @@
-## blog
+## 文章
 
 https://github.com/AlanWei/blog
 
