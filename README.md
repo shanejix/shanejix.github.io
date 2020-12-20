@@ -1,2 +1,3 @@
-# shanejixx.github.io
-My personal blog ~ 
+My personal blog ~
+
+shanejixx.netlify.com
