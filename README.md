@@ -1,3 +1,1 @@
-My personal blog ~
-
-shanejixx.netlify.com
+# My personal blog ~ 
