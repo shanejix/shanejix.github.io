@@ -20,12 +20,15 @@ jobs:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v2
 
-      # Runs a single command using the runners shell
-      - name: Gatsby deploy webhooks
-        run: curl -X POST -d {} https://api.netlify.com/build_hooks/5f4b02b383248d449bf6bcab
+      # # Runs a single command using the runners shell
+      # - name: Gatsby deploy webhooks
+      #   # netlify deloy hook
+      #   run: curl -X POST -d {} https://api.netlify.com/build_hooks/5f4b02b383248d449bf6bcab
+      #   # vercel deloy hook
+      #   run: curl -X POST -d {} https://api.vercel.com/v1/integrations/deploy/prj_AWsDYhQqCMxSoZ2YW0yxn4DfJwtZ/vXudP1NRnT
 
       # Runs a set of commands using the runners shell
-      # - name: Run a multi-line script
-      #   run: |
-      #     echo Add other actions to build,
-      #     echo test, and deploy your project.
+      - name: Gatsby deploy webhooks
+        run: |
+          curl -X POST -d {} https://api.netlify.com/build_hooks/5f4b02b383248d449bf6bcab
+          curl -X POST -d {} https://api.vercel.com/v1/integrations/deploy/prj_AWsDYhQqCMxSoZ2YW0yxn4DfJwtZ/vXudP1NRnT
