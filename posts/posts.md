@@ -6,6 +6,8 @@ https://www.zhihu.com/question/61281984/answer/1306626251
 
 https://github.com/dt-fe/weekly
 
+https://github.com/BetaSu/just-react
+
 ## Blog
 
 https://github.com/AlanWei/blog
