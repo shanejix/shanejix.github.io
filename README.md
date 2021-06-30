@@ -29,6 +29,6 @@
 
 - [The modern JavaScript leak detection - the JavaScript language](https://shanejix.netlify.app/The%20modern%20JavaScript%20leak%20detection%20-%20the%20JavaScript%20language/The%20modern%20JavaScript%20leak%20detection%20-%20the%20JavaScript%20language/)
 
-## License
+# license
 
 所有作品均采用[知识共享署名-非商业性使用-禁止演绎 4.0 国际许可协议](https://creativecommons.org/licenses/by-nc-nd/4.0/)进行许可
