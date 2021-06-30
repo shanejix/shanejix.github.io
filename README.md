@@ -1,7 +1,10 @@
 [![Netlify Status](https://api.netlify.com/api/v1/badges/16bb65ea-a3b6-4500-b8fe-a7361ce2ba61/deploy-status)](https://app.netlify.com/sites/shanejix/deploys)
-# shanejix's blog ~
 
-- [https://shanejix.netlify.app/](https://shanejix.netlify.app/) -- [https://shanejix.vercle.app/](https://shanejix.vercle.app/)
+[https://shanejix.netlify.app/](https://shanejix.netlify.app/) - [https://shanejix.vercle.app/](https://shanejix.vercle.app/)
+
+
+
+# shanejix's blog ~
 
 
 
@@ -26,3 +29,6 @@
 
 - [The modern JavaScript leak detection - the JavaScript language](https://shanejix.netlify.app/The%20modern%20JavaScript%20leak%20detection%20-%20the%20JavaScript%20language/The%20modern%20JavaScript%20leak%20detection%20-%20the%20JavaScript%20language/)
 
+## License
+
+所有作品均采用[知识共享署名-非商业性使用-禁止演绎 4.0 国际许可协议](https://creativecommons.org/licenses/by-nc-nd/4.0/)进行许可
