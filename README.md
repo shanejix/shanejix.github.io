@@ -8,29 +8,29 @@
 
 
 
-#### 算法与数据结构 | algorithm-and-data-structure
+#### algorithm-and-data-structure
 
-- [如何用 JavaScript 实现二叉树及其他 | How To Use Javascript To Implement A Binary Search Tree And More](https://shanejix.netlify.app/How%20To%20Use%20Javascript%20To%20Implement%20A%20Binary%20Search%20Tree%20And%20More/How%20To%20Use%20Javascript%20To%20Implement%20A%20Binary%20Search%20Tree%20And%20More/)
+- [How To Use Javascript To Implement A Binary Search Tree And More](https://shanejix.netlify.app/How%20To%20Use%20Javascript%20To%20Implement%20A%20Binary%20Search%20Tree%20And%20More/How%20To%20Use%20Javascript%20To%20Implement%20A%20Binary%20Search%20Tree%20And%20More/)
 
-- [[如何用JavaScript实现优先队列 | How To Use Javascript To Implement A PriorityQueue](https://shanejix.netlify.app/How%20To%20Use%20Javascript%20To%20Implement%20A%20PriorityQueue/How%20To%20Use%20Javascript%20To%20Implement%20A%20PriorityQueue/)
-
-
-#### 面试相关 | interview-related
-
-- [源码解析，如何实现一个 Axios | Implementation Axios](https://shanejix.netlify.app/Implementation%20Axios/Implementation%20Axios/)
-
-- [什么时好的 Git Message | Good Git Commit Message](https://shanejix.netlify.app/Good%20Git%20Commit%20Message/Good%20Git%20Commit%20Message/)
+- [How To Use Javascript To Implement A PriorityQueue](https://shanejix.netlify.app/How%20To%20Use%20Javascript%20To%20Implement%20A%20PriorityQueue/How%20To%20Use%20Javascript%20To%20Implement%20A%20PriorityQueue/)
 
 
-#### 问题记录 | problem-record
+#### interview-related
 
-- [一个由 `node_modlues` 引发的翻车现场 | A Rollover Scene Caused By `node_modules`](https://shanejix.netlify.app/A%20Rollover%20Scene%20Caused%20By%20%60node_modules%60/A%20Rollover%20Scene%20Caused%20By%20%60node_modules%60/)
+- [Implementation Axios](https://shanejix.netlify.app/Implementation%20Axios/Implementation%20Axios/)
+
+- [Good Git Commit Message](https://shanejix.netlify.app/Good%20Git%20Commit%20Message/Good%20Git%20Commit%20Message/)
+
+
+#### problem-record
+
+- [A Rollover Scene Caused By `node_modules`](https://shanejix.netlify.app/A%20Rollover%20Scene%20Caused%20By%20%60node_modules%60/A%20Rollover%20Scene%20Caused%20By%20%60node_modules%60/)
 
 
 
-#### 阅读笔记 | reading-and-notes
+#### reading-and-notes
 
-- [现代的JavaScript教程 - JavaScript语言篇 | The modern JavaScript leak detection - the JavaScript language](https://shanejix.netlify.app/The%20modern%20JavaScript%20leak%20detection%20-%20the%20JavaScript%20language/The%20modern%20JavaScript%20leak%20detection%20-%20the%20JavaScript%20language/)
+- [The modern JavaScript leak detection - the JavaScript language](https://shanejix.netlify.app/The%20modern%20JavaScript%20leak%20detection%20-%20the%20JavaScript%20language/The%20modern%20JavaScript%20leak%20detection%20-%20the%20JavaScript%20language/)
 
 # license
 
