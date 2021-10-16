@@ -5,12 +5,12 @@ name: deploy
 # Controls when the action will run. Triggers the workflow on push or pull request
 # events but only for the master branch
 
-# on:
-#   repository_dispatch:
-#   issues:
-#     types: [opened, edited, deleted, closed, reopened, labeled]
+on:
+  repository_dispatch:
+  issues:
+    types: [opened, edited, deleted, closed, reopened, labeled]
 
-on: repository_dispatch
+# on: repository_dispatch
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
