@@ -1,0 +1,2815 @@
+<!DOCTYPE html><html lang="en"><head><meta charSet="utf-8"/><meta http-equiv="x-ua-compatible" content="ie=edge"/><meta name="referrer" content="no-referrer"/><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/><style id="typography.js">html{font-family:sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}article,aside,details,figcaption,figure,footer,header,main,menu,nav,section,summary{display:block}audio,canvas,progress,video{display:inline-block}audio:not([controls]){display:none;height:0}progress{vertical-align:baseline}[hidden],template{display:none}a{background-color:transparent;}a:active,a:hover{outline-width:0}abbr[title]{border-bottom:none;text-decoration:underline;text-decoration:underline dotted}b,strong{font-weight:inherit;font-weight:bolder}dfn{font-style:italic}h1{font-size:2em;margin:.67em 0}mark{background-color:#ff0;color:#000}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}img{border-style:none}svg:not(:root){overflow:hidden}code,kbd,pre,samp{font-family:monospace,monospace;font-size:1em}figure{margin:1em 40px}hr{box-sizing:content-box;height:0;overflow:visible}button,input,optgroup,select,textarea{font:inherit;margin:0}optgroup{font-weight:700}button,input{overflow:visible}button,select{text-transform:none}[type=reset],[type=submit],button,html [type=button]{-webkit-appearance:button}[type=button]::-moz-focus-inner,[type=reset]::-moz-focus-inner,[type=submit]::-moz-focus-inner,button::-moz-focus-inner{border-style:none;padding:0}[type=button]:-moz-focusring,[type=reset]:-moz-focusring,[type=submit]:-moz-focusring,button:-moz-focusring{outline:1px dotted ButtonText}fieldset{border:1px solid silver;margin:0 2px;padding:.35em .625em .75em}legend{box-sizing:border-box;color:inherit;display:table;max-width:100%;padding:0;white-space:normal}textarea{overflow:auto}[type=checkbox],[type=radio]{box-sizing:border-box;padding:0}[type=number]::-webkit-inner-spin-button,[type=number]::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}[type=search]::-webkit-search-cancel-button,[type=search]::-webkit-search-decoration{-webkit-appearance:none}::-webkit-input-placeholder{color:inherit;opacity:.54}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}html{font:100%/1.75 'Merriweather','Georgia',serif;box-sizing:border-box;overflow-y:scroll;}*{box-sizing:inherit;}*:before{box-sizing:inherit;}*:after{box-sizing:inherit;}body{color:hsla(0,0%,0%,0.9);font-family:'Merriweather','Georgia',serif;font-weight:400;word-wrap:break-word;font-kerning:normal;-moz-font-feature-settings:"kern", "liga", "clig", "calt";-ms-font-feature-settings:"kern", "liga", "clig", "calt";-webkit-font-feature-settings:"kern", "liga", "clig", "calt";font-feature-settings:"kern", "liga", "clig", "calt";}img{max-width:100%;margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}h1{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;color:inherit;font-family:Montserrat,sans-serif;font-weight:900;text-rendering:optimizeLegibility;font-size:2.5rem;line-height:1.1;}h2{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;color:inherit;font-family:'Merriweather','Georgia',serif;font-weight:900;text-rendering:optimizeLegibility;font-size:1.73286rem;line-height:1.1;}h3{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;color:inherit;font-family:'Merriweather','Georgia',serif;font-weight:900;text-rendering:optimizeLegibility;font-size:1.4427rem;line-height:1.1;}h4{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;color:inherit;font-family:'Merriweather','Georgia',serif;font-weight:900;text-rendering:optimizeLegibility;font-size:1rem;line-height:1.1;letter-spacing:0.140625em;text-transform:uppercase;}h5{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;color:inherit;font-family:'Merriweather','Georgia',serif;font-weight:900;text-rendering:optimizeLegibility;font-size:0.83255rem;line-height:1.1;}h6{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;color:inherit;font-family:'Merriweather','Georgia',serif;font-weight:900;text-rendering:optimizeLegibility;font-size:0.75966rem;line-height:1.1;font-style:italic;}hgroup{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}ul{margin-left:1.45rem !important;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;list-style-position:outside;list-style-image:none;list-style:disc;}ol{margin-left:1.45rem !important;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;list-style-position:outside;list-style-image:none;}dl{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}dd{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}p{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}figure{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}pre{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;font-size:0.85rem;line-height:1.75rem;}table{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;font-size:1rem;line-height:1.75rem;border-collapse:collapse;width:100%;}fieldset{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}blockquote{margin-left:-1.75rem;margin-right:1.75rem;margin-top:0;padding-bottom:0;padding-left:1.42188rem;padding-right:0;padding-top:0;margin-bottom:1.75rem;font-size:1.20112rem;line-height:1.75rem;color:inherit;font-style:italic;border-left:0.32813rem solid hsla(0,0%,0%,0.9);border-left-color:inherit;opacity:0.8;}form{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}noscript{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}iframe{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}hr{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:calc(1.75rem - 1px);background:var(--hr);border:none;height:1px;}address{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}b{font-weight:700;}strong{font-weight:700;}dt{font-weight:700;}th{font-weight:700;}li{margin-bottom:calc(1.75rem / 2);}ol li{padding-left:0;}ul li{padding-left:0;}li > ol{margin-left:1.75rem;margin-bottom:calc(1.75rem / 2);margin-top:calc(1.75rem / 2);}li > ul{margin-left:1.75rem;margin-bottom:calc(1.75rem / 2);margin-top:calc(1.75rem / 2);}blockquote *:last-child{margin-bottom:0;}li *:last-child{margin-bottom:0;}p *:last-child{margin-bottom:0;}li > p{margin-bottom:calc(1.75rem / 2);}code{font-size:0.85rem;line-height:1.75rem;}kbd{font-size:0.85rem;line-height:1.75rem;}samp{font-size:0.85rem;line-height:1.75rem;}abbr{border-bottom:1px dotted hsla(0,0%,0%,0.5);cursor:help;}acronym{border-bottom:1px dotted hsla(0,0%,0%,0.5);cursor:help;}abbr[title]{border-bottom:1px dotted hsla(0,0%,0%,0.5);cursor:help;text-decoration:none;}thead{text-align:left;}td,th{text-align:left;border-bottom:1px solid hsla(0,0%,0%,0.12);font-feature-settings:"tnum";-moz-font-feature-settings:"tnum";-ms-font-feature-settings:"tnum";-webkit-font-feature-settings:"tnum";padding-left:1.16667rem;padding-right:1.16667rem;padding-top:0.875rem;padding-bottom:calc(0.875rem - 1px);}th:first-child,td:first-child{padding-left:0;}th:last-child,td:last-child{padding-right:0;}blockquote > :last-child{margin-bottom:0;}blockquote cite{font-size:1rem;line-height:1.75rem;color:hsla(0,0%,0%,0.9);font-weight:400;}blockquote cite:before{content:"— ";}ul,ol{margin-left:0;}@media only screen and (max-width:480px){ul,ol{margin-left:1.75rem;}blockquote{margin-left:-1.3125rem;margin-right:0;padding-left:0.98438rem;}}h1,h2,h3,h4,h5,h6{margin-top:3.5rem;}a{box-shadow:0 1px 0 0 currentColor;color:var(--pink);text-decoration:none;line-height:1.5;}a:hover,a:active{box-shadow:none;}mark,ins{background:#007acc;color:white;padding:0.10938rem 0.21875rem;text-decoration:none;}h1, h2, h3, h4, h5, h6{margin-top:0;}a.gatsby-resp-image-link{box-shadow:none;}a.anchor{box-shadow:none;}a.anchor svg[aria-hidden="true"]{stroke:var(--textLink);}p code{font-size:0.85rem;}h1 code, h2 code, h3 code, h4 code, h5 code, h6 code{font-size:inherit;}li code{font-size:0.85rem;}blockquote.translation{font-size:1em;}</style><style data-href="/styles.2c5e1fe12488927e3ca4.css" id="gatsby-global-css">html{background-color:transparent}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:100;src:local("Montserrat Thin "),local("Montserrat-Thin"),url(/static/montserrat-latin-100-191cc9f50f3b76b9617cb383f19acb7d.woff2) format("woff2"),url(/static/montserrat-latin-100-370318464551d5f25b0f0a78f374faac.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:100;src:local("Montserrat Thin italic"),local("Montserrat-Thinitalic"),url(/static/montserrat-latin-100italic-bdeaeb79db315697bd173a55b097dc18.woff2) format("woff2"),url(/static/montserrat-latin-100italic-ecf7d49386e8f265878e735db34a7c4b.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:200;src:local("Montserrat Extra Light "),local("Montserrat-Extra Light"),url(/static/montserrat-latin-200-85d5ef9db7f2dc6979172a4a3b2c57cb.woff2) format("woff2"),url(/static/montserrat-latin-200-1fc98e126a3d152549240e6244d7e669.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:200;src:local("Montserrat Extra Light italic"),local("Montserrat-Extra Lightitalic"),url(/static/montserrat-latin-200italic-49095760a498d024fe1a85a078850df9.woff2) format("woff2"),url(/static/montserrat-latin-200italic-fe46cf8b9462c820457d3bf537e4057f.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:300;src:local("Montserrat Light "),local("Montserrat-Light"),url(/static/montserrat-latin-300-7c3daf12b706645b5d3710f863a4da04.woff2) format("woff2"),url(/static/montserrat-latin-300-8dc95fab9cf98d02ca8d76e97d3dff60.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:300;src:local("Montserrat Light italic"),local("Montserrat-Lightitalic"),url(/static/montserrat-latin-300italic-f20b178ca2024a5eac8e42e6649db86c.woff2) format("woff2"),url(/static/montserrat-latin-300italic-3fe16939288856e8e828fa2661bf2354.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:400;src:local("Montserrat Regular "),local("Montserrat-Regular"),url(/static/montserrat-latin-400-bc3aa95dca08f5fee5291e34959c27bc.woff2) format("woff2"),url(/static/montserrat-latin-400-8102c4838f9e3d08dad644290a9cb701.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:400;src:local("Montserrat Regular italic"),local("Montserrat-Regularitalic"),url(/static/montserrat-latin-400italic-5cad650422a7184467af5a4d17b264c4.woff2) format("woff2"),url(/static/montserrat-latin-400italic-d191f22af3bb50902b99ac577f81a322.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:500;src:local("Montserrat Medium "),local("Montserrat-Medium"),url(/static/montserrat-latin-500-92d16e458625f4d2c8940f6bdca0ff09.woff2) format("woff2"),url(/static/montserrat-latin-500-8b763220218ffc11c57c84ddb80e7b26.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:500;src:local("Montserrat Medium italic"),local("Montserrat-Mediumitalic"),url(/static/montserrat-latin-500italic-47bfcca6b69d6a9acca7a8bff17193e2.woff2) format("woff2"),url(/static/montserrat-latin-500italic-72c01f753c3940c0b9cb6bf2389caddf.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:600;src:local("Montserrat SemiBold "),local("Montserrat-SemiBold"),url(/static/montserrat-latin-600-6fb1b5623e528e27c18658fecf5ee0ee.woff2) format("woff2"),url(/static/montserrat-latin-600-7c839d15a6f54e7025ba8c0c4b333e8f.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:600;src:local("Montserrat SemiBold italic"),local("Montserrat-SemiBolditalic"),url(/static/montserrat-latin-600italic-60789af1c9338ed1a9546722ec54b4f7.woff2) format("woff2"),url(/static/montserrat-latin-600italic-f3d4de8d0afb19e777c79032ce828e3d.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:700;src:local("Montserrat Bold "),local("Montserrat-Bold"),url(/static/montserrat-latin-700-39d93cf678c740f9f6b2b1cfde34bee3.woff2) format("woff2"),url(/static/montserrat-latin-700-80f10bd382f0df1cd650fec59f3c9394.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:700;src:local("Montserrat Bold italic"),local("Montserrat-Bolditalic"),url(/static/montserrat-latin-700italic-ba136d97b14e82284dd595e257f11c47.woff2) format("woff2"),url(/static/montserrat-latin-700italic-8c98142b425630821139c24bd1698700.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:800;src:local("Montserrat ExtraBold "),local("Montserrat-ExtraBold"),url(/static/montserrat-latin-800-b7018be9ed6cd94da8b6675b3a468c3b.woff2) format("woff2"),url(/static/montserrat-latin-800-9a9befcf50d64f9d2d19d8b1d1984add.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:800;src:local("Montserrat ExtraBold italic"),local("Montserrat-ExtraBolditalic"),url(/static/montserrat-latin-800italic-540ffdd223d1a9ad3d4e678e1a23372e.woff2) format("woff2"),url(/static/montserrat-latin-800italic-897086f99f4e1f45e6b1e9368527d0bc.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:900;src:local("Montserrat Black "),local("Montserrat-Black"),url(/static/montserrat-latin-900-58cd789700850375b834e8b6776002eb.woff2) format("woff2"),url(/static/montserrat-latin-900-26d42c9428780e545a540bbb50c84bce.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:900;src:local("Montserrat Black italic"),local("Montserrat-Blackitalic"),url(/static/montserrat-latin-900italic-451157bc8861fe54f523b3669a3def71.woff2) format("woff2"),url(/static/montserrat-latin-900italic-a8ec4957e1c24f5793305763ad9845b3.woff) format("woff")}@font-face{font-family:Merriweather;font-style:normal;font-display:swap;font-weight:300;src:local("Merriweather Light "),local("Merriweather-Light"),url(/static/merriweather-latin-300-b1158cfcd4aacb9d8fb61625e37af46a.woff2) format("woff2"),url(/static/merriweather-latin-300-cc7de05e166e90320d7d896e0f72a19d.woff) format("woff")}@font-face{font-family:Merriweather;font-style:italic;font-display:swap;font-weight:300;src:local("Merriweather Light italic"),local("Merriweather-Lightitalic"),url(/static/merriweather-latin-300italic-8fe52a48089d6ebe46db0b8e7cc66263.woff2) format("woff2"),url(/static/merriweather-latin-300italic-e1331f5397c2a673f9d3765138debdb5.woff) format("woff")}@font-face{font-family:Merriweather;font-style:normal;font-display:swap;font-weight:400;src:local("Merriweather Regular "),local("Merriweather-Regular"),url(/static/merriweather-latin-400-8276fdb72ae8f4714d4e6eba704cc39f.woff2) format("woff2"),url(/static/merriweather-latin-400-69f09800f4f6479d06e44eba837df872.woff) format("woff")}@font-face{font-family:Merriweather;font-style:italic;font-display:swap;font-weight:400;src:local("Merriweather Regular italic"),local("Merriweather-Regularitalic"),url(/static/merriweather-latin-400italic-3a9be9ea9f7aa4af6de7307df21d9fc0.woff2) format("woff2"),url(/static/merriweather-latin-400italic-d76079ed7541a433a54f79316de086e9.woff) format("woff")}@font-face{font-family:Merriweather;font-style:normal;font-display:swap;font-weight:700;src:local("Merriweather Bold "),local("Merriweather-Bold"),url(/static/merriweather-latin-700-fa534be7ffa380e39a7f6e03bf9a5e03.woff2) format("woff2"),url(/static/merriweather-latin-700-ba56ea84b8084b7ff9677f50d3cd81bd.woff) format("woff")}@font-face{font-family:Merriweather;font-style:italic;font-display:swap;font-weight:700;src:local("Merriweather Bold italic"),local("Merriweather-Bolditalic"),url(/static/merriweather-latin-700italic-1ef5edaaa20ae53ea50399884c5e48c6.woff2) format("woff2"),url(/static/merriweather-latin-700italic-534bc9e7ce93c73d73426e46acd78092.woff) format("woff")}@font-face{font-family:Merriweather;font-style:normal;font-display:swap;font-weight:900;src:local("Merriweather Black "),local("Merriweather-Black"),url(/static/merriweather-latin-900-7528fb70e8a4a82c7305e72ff43ac25f.woff2) format("woff2"),url(/static/merriweather-latin-900-3799b6e2f5ed3fcccf9d7a708d7419fa.woff) format("woff")}@font-face{font-family:Merriweather;font-style:italic;font-display:swap;font-weight:900;src:local("Merriweather Black italic"),local("Merriweather-Blackitalic"),url(/static/merriweather-latin-900italic-e1b4d2aaa78e12ad84aaf8a56321e4c2.woff2) format("woff2"),url(/static/merriweather-latin-900italic-2ae22f731b3424e8dbb4b37f7ca6e708.woff) format("woff")}@font-face{font-display:swap;font-family:Merriweather;font-style:normal;font-weight:400;src:url(/static/merriweather-400-l-8796b7875d52e9cb9b280211e8d3f82d.woff2) format("woff2");unicode-range:U+00??,U+0131,U+0152-0153,U+02bb-02bc,U+02c6,U+02da,U+02dc,U+2000-206f,U+2074,U+20ac,U+2122,U+2191,U+2193,U+2212,U+2215,U+feff,U+fffd}@font-face{font-display:swap;font-family:Montserrat;font-style:normal;font-weight:900;src:url(/static/montserrat-900-l-5751237264c0468be0d48ad1cea75b90.woff2) format("woff2");unicode-range:U+00??,U+0131,U+0152-0153,U+02bb-02bc,U+02c6,U+02da,U+02dc,U+2000-206f,U+2074,U+20ac,U+2122,U+2191,U+2193,U+2212,U+2215,U+feff,U+fffd}body{--pink:#d33a31;background-color:var(--bg)}body.light{--bg:#f0e7db;--bg-secondary:#f9fafb;--header:var(--pink);--textNormal:#222;--textTitle:#222;--hr:rgba(0,0,0,0.2);--inlineCode-bg:rgba(255,229,100,0.2);--inlineCode-text:#1a1a1a;--form-shadow:0 2px 15px 0 rgba(210,214,220,0.5)}body.dark,body.light{--textLink:var(--pink)}body.dark{-webkit-font-smoothing:antialiased;--bg:#282c35;--bg-secondary:#363c48;--header:#fff;--textNormal:hsla(0,0%,100%,0.88);--textTitle:#fff;--hr:hsla(0,0%,100%,0.2);--inlineCode-bg:rgba(115,124,153,0.2);--inlineCode-text:#e6e6e6;--form-shadow:0 2px 15px 0 rgba(26,26,27,0.637)}body:lang(ar) article,body:lang(fa) article,body:lang(he) article{direction:rtl}body:lang(ar) .language-text,body:lang(ar) article .translations,body:lang(ar) article pre,body:lang(fa) .language-text,body:lang(fa) article .translations,body:lang(fa) article pre,body:lang(he) .language-text,body:lang(he) article .translations,body:lang(he) article pre{direction:ltr}body:lang(ar) .language-text,body:lang(fa) .language-text,body:lang(he) .language-text{display:inline-block}body:lang(ar) blockquote,body:lang(fa) blockquote,body:lang(he) blockquote{border-left:unset;border-right:.32813rem solid rgba(0,0,0,.9);padding-right:1.42188rem;padding-left:unset;margin-left:.75rem;margin-right:-1.75rem}body:lang(fa) article,body:lang(fa) header>h1{font-family:Vazir}body:lang(ar) article,body:lang(ar) header>h1{font-family:Cairo,sans-serif}body:lang(ko) article,body:lang(ko) header{word-break:keep-all}code[class*=language-],pre[class*=language-]{color:#fff;background:none;font-family:Consolas,Menlo,Monaco,source-code-pro,Courier New,monospace;font-feature-settings:normal;text-align:left;white-space:pre;word-spacing:normal;word-break:normal;word-wrap:normal;line-height:1.5;margin-bottom:0;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-hyphens:none;-ms-hyphens:none;hyphens:none}pre[class*=language-]{overflow:auto;padding:1.3125rem}pre[class*=language-]::selection{background:#27292a}pre[class*=language-]::selection,pre[class*=language-] ::selection{text-shadow:none;background:hsla(0,0%,100%,.15)}:not(pre)>code[class*=language-]{border-radius:.3em;background:var(--inlineCode-bg);color:var(--inlineCode-text);padding:.15em .2em .05em;white-space:normal}.token.attr-name{color:#addb67;font-style:italic}.token.comment{color:#809393}.token.string,.token.url{color:#addb67}.token.variable{color:#d6deeb}.token.number{color:#f78c6c}.token.builtin,.token.char,.token.constant,.token.function{color:#82aaff}.token.punctuation{color:#c792ea}.token.doctype,.token.selector{color:#c792ea;font-style:"italic"}.token.class-name{color:#ffcb8b}.token.keyword,.token.operator,.token.tag{color:#ffa7c4}.token.boolean{color:#ff5874}.token.property{color:#80cbc4}.token.namespace{color:#b2ccd6}pre[data-line]{padding:1em 0 1em 3em;position:relative}.gatsby-highlight-code-line{background-color:#022a4b;display:block;padding-right:1em;padding-left:1.25em;border-left:.25em solid #ffa7c4}.gatsby-highlight,.gatsby-highlight-code-line{margin-right:-1.3125rem;margin-left:-1.3125rem}.gatsby-highlight{margin-bottom:1.75rem;border-radius:10px;background:#011627;-webkit-overflow-scrolling:touch;overflow:auto}@media (max-width:672px){.gatsby-highlight{border-radius:0}}.gatsby-highlight pre[class*=language-]{float:left;min-width:100%}.react-toggle{touch-action:pan-x;display:inline-block;position:relative;cursor:pointer;background-color:transparent;border:0;padding:0;-webkit-touch-callout:none;-webkit-user-select:none;-ms-user-select:none;user-select:none;-webkit-tap-highlight-color:rgba(0,0,0,0);-webkit-tap-highlight-color:transparent}.react-toggle-screenreader-only{border:0;clip:rect(0 0 0 0);height:1px;margin:-1px;overflow:hidden;padding:0;position:absolute;width:1px}.react-toggle-track{width:50px;height:24px;padding:0;border-radius:30px;background-color:#0f1114;transition:all .2s ease}.react-toggle-track-check{position:absolute;width:17px;height:17px;left:5px;top:0;bottom:0;margin-top:auto;margin-bottom:auto;line-height:0;opacity:0;transition:opacity .25s ease}.react-toggle--checked .react-toggle-track-check,.react-toggle-track-x{opacity:1;transition:opacity .25s ease}.react-toggle-track-x{position:absolute;width:17px;height:17px;right:5px;top:0;bottom:0;margin-top:auto;margin-bottom:auto;line-height:0}.react-toggle--checked .react-toggle-track-x{opacity:0}.react-toggle-thumb{position:absolute;top:1px;left:1px;width:22px;height:22px;border-radius:50%;background-color:#fafafa;box-sizing:border-box;transition:all .5s cubic-bezier(.23,1,.32,1) 0ms;transform:translateX(0)}.react-toggle--checked .react-toggle-thumb{transform:translateX(26px);border-color:#19ab27}.react-toggle--focus .react-toggle-thumb{box-shadow:0 0 2px 3px #ffa7c4}.react-toggle:active .react-toggle-thumb{box-shadow:0 0 5px 5px #ffa7c4}.box{padding:.5rem 1rem;border:1px solid var(--textNormal);border-radius:.25rem}.box,.boxes{margin-bottom:1rem}.boxes{border:2px solid var(--textNormal);border-radius:6px}.boxes>.box{border-width:0;border-radius:0;margin-bottom:0}.boxes>.box:first-child{border-top-left-radius:4px!important;border-top-right-radius:4px!important}.boxes>.box:last-child{border-bottom-left-radius:4px!important;border-bottom-right-radius:4px!important}.boxes>.box.box-header{background-color:rgba(100,100,150,.04)}.boxes>.box.box-body{padding-top:1rem;padding-bottom:1rem}.boxes>.box.box-footer{background-color:rgba(100,100,150,.04)}.boxes .box+.box{border-top-width:1px}.boxes .boxes{margin-bottom:0}.boxes.transparent,.boxes.transparent .box{background-color:transparent}.boxes.inverted{color:#fff}.boxes.inverted,.boxes.inverted .box{background-color:#2d353c;border-color:var(--textNormal)}.boxes.secondary{border-width:0}.boxes.secondary>.box{border-width:1px;border-radius:.25rem}.boxes.secondary>.box.box-header{background-color:transparent;margin-bottom:0;border-width:0;border-radius:0!important}.boxes.secondary>.box.box-body{padding-top:1rem;padding-bottom:1rem;margin-bottom:0}.boxes.secondary>.box.box-footer{background-color:transparent;border-width:0;border-radius:0!important}.p-y-0{padding-top:0!important;padding-bottom:0!important}.p-y-8{padding-top:.5rem!important;padding-bottom:.5rem!important}.col,.col-1,.col-2,.col-3,.col-4,.col-5,.col-6,.col-7,.col-8,.col-9,.col-10,.col-11,.col-12{position:relative;width:100%;padding-left:.75rem;padding-right:.75rem}.col-4{flex:0 0 33.33333%;max-width:33.33333%}.cols-10>.col-4{flex:0 0 40%;max-width:40%}.b-r-1{border-right:1px solid var(--textNormal)!important}.row{display:flex;flex-wrap:wrap;margin-left:-.75rem;margin-right:-.75rem}.row.g-32{margin-left:-16px!important;margin-right:-16px!important}.row.g-32>[class*=col]{padding-left:16px!important;padding-right:16px!important}.boxes>.box>.m-t-0+p p{margin-bottom:1rem}</style><meta name="generator" content="Gatsby 2.32.13"/><link rel="preconnect" href="https://www.google-analytics.com"/><link rel="dns-prefetch" href="https://www.google-analytics.com"/><link rel="preconnect" href="https://www.googletagmanager.com"/><link rel="dns-prefetch" href="https://www.googletagmanager.com"/><link rel="icon" href="/favicon-32x32.png?v=0d7082db0bcaf1381f0ae2cbdc939311" type="image/png"/><link rel="manifest" href="/manifest.webmanifest" crossorigin="anonymous"/><meta name="theme-color" content="#6b37bf"/><link rel="apple-touch-icon" sizes="48x48" href="/icons/icon-48x48.png?v=0d7082db0bcaf1381f0ae2cbdc939311"/><link rel="apple-touch-icon" sizes="72x72" href="/icons/icon-72x72.png?v=0d7082db0bcaf1381f0ae2cbdc939311"/><link rel="apple-touch-icon" sizes="96x96" href="/icons/icon-96x96.png?v=0d7082db0bcaf1381f0ae2cbdc939311"/><link rel="apple-touch-icon" sizes="144x144" href="/icons/icon-144x144.png?v=0d7082db0bcaf1381f0ae2cbdc939311"/><link rel="apple-touch-icon" sizes="192x192" href="/icons/icon-192x192.png?v=0d7082db0bcaf1381f0ae2cbdc939311"/><link rel="apple-touch-icon" sizes="256x256" href="/icons/icon-256x256.png?v=0d7082db0bcaf1381f0ae2cbdc939311"/><link rel="apple-touch-icon" sizes="384x384" href="/icons/icon-384x384.png?v=0d7082db0bcaf1381f0ae2cbdc939311"/><link rel="apple-touch-icon" sizes="512x512" href="/icons/icon-512x512.png?v=0d7082db0bcaf1381f0ae2cbdc939311"/><link rel="sitemap" type="application/xml" href="/sitemap.xml"/><title data-react-helmet="true">shanejix | shanejix</title><meta data-react-helmet="true" property="og:title" content="2022金三银四前端面试笔记"/><meta data-react-helmet="true" property="og:description" content="同步链接: https://www.shanejix.com/posts/2022 金三银四前端面试笔记/ 202…"/><meta data-react-helmet="true" property="og:type" content="website"/><meta data-react-helmet="true" name="twitter:card" content="summary"/><meta data-react-helmet="true" name="twitter:creator" content="shanejix"/><meta data-react-helmet="true" name="twitter:title" content="2022金三银四前端面试笔记"/><meta data-react-helmet="true" name="twitter:description" content="同步链接: https://www.shanejix.com/posts/2022 金三银四前端面试笔记/ 202…"/><meta data-react-helmet="true" name="description" content="learner &amp;&amp; coder"/><script async="" type="text/javascript" src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script><script>
+        (adsbygoogle = window.adsbygoogle || []).push({
+            google_ad_client: "ca-pub-7633830809578886",
+            enable_page_level_ads: true
+        });
+        </script><link as="script" rel="preload" href="/webpack-runtime-e0256f23ab3c5c1ffc4c.js"/><link as="script" rel="preload" href="/framework-b17a64ad725e0b3c1338.js"/><link as="script" rel="preload" href="/app-5c7248fcb69374f91873.js"/><link as="script" rel="preload" href="/styles-407fe62976dc5310c43e.js"/><link as="script" rel="preload" href="/cac18b802c8b308508681dc900d8d8f756c7bdb5-c7c9c4e9ce9bf74cce02.js"/><link as="script" rel="preload" href="/component---src-templates-blog-post-js-06eb50339f2f3ac086e8.js"/><link as="fetch" rel="preload" href="/page-data/posts/2022金三银四前端面试笔记/page-data.json" crossorigin="anonymous"/><link as="fetch" rel="preload" href="/page-data/sq/d/3159585216.json" crossorigin="anonymous"/><link as="fetch" rel="preload" href="/page-data/sq/d/63159454.json" crossorigin="anonymous"/><link as="fetch" rel="preload" href="/page-data/app-data.json" crossorigin="anonymous"/></head><body class="light"><script>
+              (function() {
+                window.__onThemeChange = function() {};
+                function setTheme(newTheme) {
+                  window.__theme = newTheme;
+                  preferredTheme = newTheme;
+                  document.body.className = newTheme;
+                  window.__onThemeChange(newTheme);
+                }
+
+                var preferredTheme;
+                try {
+                  preferredTheme = localStorage.getItem('theme');
+                } catch (err) { }
+
+                window.__setPreferredTheme = function(newTheme) {
+                  setTheme(newTheme);
+                  try {
+                    localStorage.setItem('theme', newTheme);
+                  } catch (err) {}
+                }
+
+                var darkQuery = window.matchMedia('(prefers-color-scheme: dark)');
+                darkQuery.addListener(function(e) {
+                  window.__setPreferredTheme(e.matches ? 'dark' : 'light')
+                });
+
+                setTheme(preferredTheme || (darkQuery.matches ? 'dark' : 'light'));
+              })();
+            </script><div id="___gatsby"><div style="outline:none" tabindex="-1" id="gatsby-focus-wrapper"><style data-emotion-css="14j5ye3">.css-14j5ye3{margin-left:auto;margin-right:auto;padding:0 1.3125rem;max-width:42rem;}</style><div style="color:var(--textNormal);transition:color 0.2s ease-out, background 0.2s ease-out" class="css-14j5ye3"><style data-emotion-css="zhpt6k">.css-zhpt6k{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;-webkit-box-pack:end;-webkit-justify-content:flex-end;-ms-flex-pack:end;justify-content:flex-end;min-height:15vh;}</style><header class="css-zhpt6k"><div style="margin-right:auto"><style data-emotion-css="w4vfos">.css-w4vfos{height:15vh;line-height:15vh;text-shadow:none;background-image:none;}</style><a class="css-w4vfos" href="/"><style data-emotion-css="4nx8jl">.css-4nx8jl{display:inline-block;font-style:normal;}</style><h3 class="css-4nx8jl">Shane Jix</h3></a></div><div><div style="height:24px"></div></div></header><main style="min-height:calc(100vh - 25vh)"><article style="border-radius:3px;margin-bottom:0.5rem;font-size:1rem"><section><h1 style="margin-top:1.75rem;margin-bottom:0;margin-left:-0.5rem;margin-right:-0.5rem">2022金三银四前端面试笔记</h1><p style="font-size:0.83255rem;line-height:1.75rem;display:block;margin-bottom:1.75rem;margin-top:0.875rem"><span>create:<!-- -->February 28, 2022</span>  <span>update:<!-- -->April 12, 2022</span>  <span> • <!-- -->🍱🍱🍱🍱🍱 66 min read</span></p></section><section><blockquote>
+<p>同步链接: <a href="https://www.shanejix.com/posts/2022%E9%87%91%E4%B8%89%E9%93%B6%E5%9B%9B%E5%89%8D%E7%AB%AF%E9%9D%A2%E8%AF%95%E7%AC%94%E8%AE%B0/">https://www.shanejix.com/posts/2022 金三银四前端面试笔记/</a></p>
+</blockquote>
+<p>2022 金三银四 真可谓 铜三铁四 ！伴随着京东、字节、蚂蚁等头部互联网公司员工被大量被优化，我也一把鼻涕一把泪的加入了内卷大军。</p>
+<p>下面的主要内容是前端基础知识的梳理（大纲式笔记），具体内容部分有链接可以跳转后深入学习。这部分内容是结合自己的面试经历和市场上大部的反馈整理出的笔记。在此记录一下，方便后续复盘。</p>
+<p>特别说明：</p>
+<p>如果你正在找工作或者计划跳槽，可以参考单别照抄，强烈建议您手把手整理自己的知识体系，完善自己的思维，形成自己的文档</p>
+<p>➕：代表综合自己所有面试被问到的频率</p>
+<p>🔥：市场反馈的热度</p>
+<p><img src="https://cdn.nlark.com/yuque/0/2022/png/377147/1649745952498-0ded8dd1-5196-42fc-aca4-a7f0f47c8606.png#clientId=u0d34be0f-d92c-4&#x26;crop=0&#x26;crop=0&#x26;crop=1&#x26;crop=1&#x26;from=paste&#x26;height=572&#x26;id=u1ca16827&#x26;name=image.png&#x26;originHeight=715&#x26;originWidth=806&#x26;originalType=binary&#x26;ratio=1&#x26;rotation=0&#x26;showTitle=false&#x26;size=48181&#x26;status=done&#x26;style=none&#x26;taskId=u67efd100-a7f8-43b8-9db7-6d615333b2e&#x26;title=&#x26;width=644.8" alt="image.png"></p>
+<p><img src="https://cdn.nlark.com/yuque/0/2022/png/377147/1649746113484-7e57dade-5e89-427a-b258-6471d6ccf57e.png#clientId=u0d34be0f-d92c-4&#x26;crop=0&#x26;crop=0&#x26;crop=1&#x26;crop=1&#x26;from=drop&#x26;id=u91c38cc6&#x26;name=%5B2022%5DShaneJix%E5%89%8D%E7%AB%AF%E9%9D%A2%E8%AF%95%E7%AC%94%E8%AE%B0.png&#x26;originHeight=4733&#x26;originWidth=3580&#x26;originalType=binary&#x26;ratio=1&#x26;rotation=0&#x26;showTitle=false&#x26;size=2277665&#x26;status=done&#x26;style=none&#x26;taskId=u1d4610cf-d570-48d5-8006-a31ffb0b132&#x26;title=" alt="[2022]ShaneJix前端面试笔记.png"></p>
+<p>正文如下</p>
+<h2>零、面试相关</h2>
+<ul>
+<li>
+<p><a href="https://interview.shanejix.com/#/?id=%e9%9d%a2%e8%af%95%e9%98%b6%e6%ae%b5-%f0%9f%94%a5%f0%9f%94%a5">面试阶段</a></p>
+<ul>
+<li>一面</li>
+<li>二面</li>
+<li>hr 面</li>
+</ul>
+</li>
+<li>
+<p>➕➕➕<a href="https://interview.shanejix.com/#/?id=%e4%b8%aa%e4%ba%ba%e4%bb%8b%e7%bb%8d-%f0%9f%94%a5%f0%9f%94%a5%f0%9f%94%a5">个人介绍 🔥🔥🔥</a></p>
+<ul>
+<li>面试官你好，我叫 xx，19 年毕业，目前有近 3 年的工作经验</li>
+<li>在技术方面对 react 比较熟悉，也能写点 typescript；</li>
+<li>在上一家公司主要负责 xx 平台官网的建设重构以及维护，也会进行基础设计的建设和通用打包脚本的编写和维护，也参与了物料平台的的设计以及 c 项目的初始化等工作</li>
+<li>平时喜欢从共工作中总结问题并得出一些通用的解决方案；常年混迹于 github，参与过大型开源项目并且贡献过 pr</li>
+</ul>
+</li>
+</ul>
+<h2>壹、HTML 相关</h2>
+<ul>
+<li>
+<p>➕<a href="https://interview.shanejix.com/#/?id=html%e8%af%ad%e4%b9%89%e5%8c%96">HTML 语义化</a></p>
+<ul>
+<li>是什么</li>
+<li>用合适的标签描述清晰的结构和内容</li>
+<li>为什么（作用）</li>
+<li>让开发者和机器更容易理解，便于维护</li>
+<li>让爬虫更容易爬取，有利于 seo</li>
+<li>怎么做</li>
+<li>框架集成（next 等</li>
+<li>三方库（seo</li>
+<li>
+<p>自己怎么写</p>
+<ul>
+<li>lighthouse</li>
+<li>语义化标签</li>
+<li>header</li>
+<li>footer</li>
+<li>不用非语义化标签</li>
+<li>div</li>
+<li>span</li>
+<li>sitemap</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h2>贰、CSS 相关</h2>
+<ul>
+<li>
+<p>➕➕<a href="https://interview.shanejix.com/#/?id=bfc-%e7%9a%84%e5%bd%a2%e6%88%90%e5%92%8c%e4%bd%9c%e7%94%a8-%f0%9f%94%a5%f0%9f%94%a5%f0%9f%94%a5">BFC 的形成和作用 🔥🔥🔥</a></p>
+<ul>
+<li>是什么</li>
+<li>块级格式上下文</li>
+<li>只有块级盒子参与的独立独立渲染区域</li>
+<li>规定了内部块级盒子如何布局且与区域外部无关</li>
+<li>触发</li>
+<li>跟元素（html 元素）</li>
+<li>float</li>
+<li>overflow（不为 visible）</li>
+<li>position（不为 relative 和 static）</li>
+<li>
+<p>display</p>
+<ul>
+<li>inline-block</li>
+<li>flex</li>
+<li>grid</li>
+<li>table</li>
+</ul>
+</li>
+<li>作用</li>
+<li>修复浮动元素造成的高度塌陷问题</li>
+<li>防止 margin 重叠</li>
+<li>实现灵活健壮的自适应布局</li>
+<li>解析</li>
+<li>触发 BFC 的条件，创建 BFC</li>
+<li>在同一个 BFC 中，相邻块级盒子的垂直外边距会合并</li>
+<li>在 BFC 中，每一个盒子的左外边缘（margin-left）会触碰到包含块的左边缘</li>
+<li>深入</li>
+<li>
+<p>盒模型</p>
+<ul>
+<li>描述了一个由元素生成的矩形盒子<img src="https://cdn.nlark.com/yuque/0/2022/png/377147/1649744054279-9954a5d1-b855-4cb3-a831-51218dd6d55e.png#clientId=ubfed43c7-cbb4-4&#x26;crop=0&#x26;crop=0&#x26;crop=1&#x26;crop=1&#x26;from=paste&#x26;id=ubc5c2492&#x26;margin=%5Bobject%20Object%5D&#x26;name=image.png&#x26;originHeight=340&#x26;originWidth=455&#x26;originalType=url&#x26;ratio=1&#x26;rotation=0&#x26;showTitle=false&#x26;size=18922&#x26;status=done&#x26;style=none&#x26;taskId=ue86906da-b5ea-4fcd-9163-e6bba08e572&#x26;title=#crop=0&#x26;crop=0&#x26;crop=1&#x26;crop=1&#x26;id=Vxrli&#x26;originHeight=340&#x26;originWidth=455&#x26;originalType=binary&#x26;ratio=1&#x26;rotation=0&#x26;showTitle=false&#x26;status=done&#x26;style=none&#x26;title=" alt="image.png"></li>
+</ul>
+</li>
+<li>
+<p>视觉格式化模型</p>
+<ul>
+<li>决定盒子的大小、位置以及属性（例如颜色、背景、边框尺寸等等）</li>
+<li>包含块</li>
+<li>大部分情况下，包含块是一个由元素最近的祖先块容器的内容区域（content area）确定的矩形区域，</li>
+<li>包含块本身不是盒子，是一个矩形区域</li>
+<li>元素的大小，位置，及偏移等布局信息根据包含块的尺寸进行计算</li>
+<li>正常流</li>
+<li>正常流是浏览器的默认布局方式</li>
+<li>在正常流中的盒子，属于 BFC，IFC，或其他格式化上下文之一</li>
+<li>格式化上下文</li>
+<li>块级格式化上下文（BFC，block formatting context）</li>
+<li>内联格式化上下文（IFC，inline formatting context）</li>
+<li>弹性格式化上下文（FFC，flex formatting context），在 CSS3 中定义</li>
+<li>栅格格式化上下文（GFC，grid formatting context），在 CSS3 中定义</li>
+<li>独立格式化上下文</li>
+<li>一个盒子要么建立一个新的独立格式化上下文，要么延续其包含块的格式化上下文</li>
+<li>除了特殊说明，建立新的格式化上下文就是在建立一个独立格式化上下文</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p><a href="https://interview.shanejix.com/#/?id=%e8%b0%88%e8%b0%88-css-%e9%a2%84%e5%a4%84%e7%90%86%e5%99%a8-%f0%9f%94%a5%f0%9f%94%a5">谈谈 CSS 预处理器 🔥🔥</a></p>
+<ul>
+<li>是什么？为什么？</li>
+<li>CSS 本身不属于可编程语言，当前端项目逐渐庞大之后 CSS 的维护也愈加困难</li>
+<li>CSS 预处理器所做的本质上是为 CSS 增加一些可编程的特性，通过变量、嵌套、简单的程序逻辑、计算、函数等特性，通过工程化的手段让 CSS 更易维护，提升开发效率</li>
+<li>那些预处理器？</li>
+<li>
+<p><a href="https://interview.shanejix.com/#/?id=postcss">PostCSS</a></p>
+<ul>
+<li>特点</li>
+<li>本体功能比较单一</li>
+<li>把 CSS 解析成 AST，插件化增强功能</li>
+<li>功能</li>
+<li><a href="https://github.com/postcss/autoprefixer">Autoprefixer</a> 为 CSS 中的属性添加浏览器特定的前缀</li>
+<li><a href="https://github.com/csstools/postcss-preset-env">postcss-preset-env</a> 根据 browserslist 指定的目标浏览器将一些 CSS 的新特性转换为目标浏览器所支持的语法</li>
+<li><a href="https://github.com/cssnano/cssnano">cssnano</a> 提供 CSS 压缩功能</li>
+<li><a href="https://github.com/postcss/postcss-nested">postcss-nested</a> 提供 CSS 嵌套功能</li>
+<li><a href="https://github.com/evrone/postcss-px-to-viewport">postcss-px-to-viewport</a> 提供 px 转 vw 功能</li>
+<li><a href="https://github.com/postcss/postcss-custom-properties">postcss-custom-properties</a> 支持 CSS 的自定义属性</li>
+<li>优点</li>
+<li>插件系统完善，扩展性强。</li>
+<li>配合插件功能齐全。</li>
+<li>生态优秀。</li>
+<li>缺点</li>
+<li>配置相对复杂</li>
+</ul>
+</li>
+<li>
+<p><a href="https://interview.shanejix.com/#/?id=sass">Sass</a>、<a href="https://interview.shanejix.com/#/?id=less">Less</a></p>
+<ul>
+<li>特点</li>
+<li>完全兼容 CSS 语法</li>
+<li>less 浏览器端直接使用。</li>
+<li>功能</li>
+<li>变量、嵌套、混合、操作符、自定义函数等可编程能力</li>
+<li>优点</li>
+<li>使用广泛。</li>
+<li>功能支持完善。</li>
+<li>可编程能力强。</li>
+<li>缺点</li>
+<li>CSS 的复杂度不可控。</li>
+<li>node-sass 国内安装不易（非 Sass 本身的缺点，dart-sass 可代替）。</li>
+<li>less 不支持自定义函数（可通过 mixins 实现简单逻辑）</li>
+</ul>
+</li>
+<li>
+<p><a href="https://interview.shanejix.com/#/?id=stylus">Stylus</a></p>
+<ul>
+<li>与 less sass 类似</li>
+<li>最大的特点就是简洁（冒号、分号、逗号和括号都是可选项）</li>
+</ul>
+</li>
+<li>扩展</li>
+<li>
+<p><a href="https://interview.shanejix.com/#/?id=css-modules">CSS Modules</a></p>
+<ul>
+<li>特点</li>
+<li>与预处理器不同，不是可编程化的 CSS</li>
+<li>CSS 文件加入了作用域和模块依赖</li>
+<li>作用（优点）</li>
+<li>解决 CSS 全局污染的痛点</li>
+</ul>
+</li>
+<li>
+<p><a href="https://interview.shanejix.com/#/?id=css-in-js">CSS-in-JS</a></p>
+<ul>
+<li>特点</li>
+<li>在 JavaScript 里写 CSS 的方式</li>
+<li>优点</li>
+<li>JS 的优势可实现非常灵活的可扩展的样式</li>
+</ul>
+</li>
+<li>
+<p><a href="https://interview.shanejix.com/#/?id=tailwind-%e5%92%8c-utility-first-css">Tailwind 和 Utility-first CSS</a></p>
+<ul>
+<li>特点</li>
+<li>功能类优先（Utility-first CSS）的理念</li>
+<li>优点</li>
+<li>不用考虑 class 的命名</li>
+<li>CSS 文件大小增长可控，通过 purge 可生成非常小的 CSS 文件</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>➕<a href="https://interview.shanejix.com/#/?id=%e6%b0%b4%e5%b9%b3%e5%9e%82%e7%9b%b4%e5%b1%85%e4%b8%ad%e6%96%b9%e6%a1%88-%f0%9f%94%a5%f0%9f%94%a5%f0%9f%94%a5">水平垂直居中方案 🔥🔥🔥</a></p>
+<ul>
+<li>flex</li>
+<li>grid</li>
+<li>相对定位</li>
+<li>transform:translate</li>
+<li>calc</li>
+<li>绝对定位</li>
+<li>transform:translate</li>
+<li>calc</li>
+<li>
+<p>margin</p>
+<ul>
+<li>left,right</li>
+<li>auto</li>
+</ul>
+</li>
+<li>表格布局</li>
+<li>table-cell</li>
+<li>line-height</li>
+</ul>
+</li>
+<li>
+<p>➕➕<a href="https://interview.shanejix.com/#/?id=%e7%a7%bb%e5%8a%a8%e7%ab%af%e8%87%aa%e9%80%82%e5%ba%94%e7%9a%84%e5%b8%b8%e8%a7%81%e6%89%8b%e6%ae%b5-%f0%9f%94%a5%f0%9f%94%a5%f0%9f%94%a5">移动端自适应的常见手段 🔥🔥🔥</a></p>
+<ul>
+<li>痛点（为什么）</li>
+<li>使不同的终端设备都拥有基本一致的视觉效果和交互体验</li>
+<li>适配方案</li>
+<li>视口元信息配置</li>
+<li>
+<p>响应式布局</p>
+<ul>
+<li>flex</li>
+<li>grid</li>
+</ul>
+</li>
+<li>
+<p>相对单位</p>
+<ul>
+<li>vw、vh</li>
+<li>rem</li>
+</ul>
+</li>
+<li>媒体查询</li>
+<li>响应式图片</li>
+<li>安全区域适配</li>
+</ul>
+</li>
+<li>
+<p>➕css 清除浮动</p>
+<ul>
+<li>clear:both/left/right</li>
+<li>触发 bfc</li>
+<li>让父级元素跟着浮动</li>
+</ul>
+</li>
+<li>
+<p>➕ 旋转盒子</p>
+<ul>
+<li>animation + transform:rotate</li>
+</ul>
+</li>
+<li>
+<p>➕ 单行/单行文本溢出省略</p>
+<ul>
+<li>单行</li>
+<li>overflow:hidden</li>
+<li>white-space:nowrap</li>
+<li>text-overflow: ellipsis</li>
+<li>多行</li>
+<li>伪元素+ 绝对定位</li>
+<li>clamp 属性</li>
+</ul>
+</li>
+<li>
+<p>➕➕ 两栏布局左侧自适应、三栏布局中间自适应</p>
+<ul>
+<li>两栏</li>
+<li>float:left ;margin-left ;BFC</li>
+<li>display:flex;flex:1;</li>
+<li>三栏</li>
+<li>float:left,right;margin: left,right</li>
+<li>绝对定位</li>
+<li>float+-margin</li>
+<li>dislplay: table</li>
+<li>flex</li>
+<li>grid</li>
+</ul>
+</li>
+<li>➕flex</li>
+</ul>
+<h2>叁、JavaScript 相关</h2>
+<ul>
+<li>
+<p>➕➕➕<a href="https://interview.shanejix.com/#/?id=es6%e6%96%b0%e7%89%b9%e6%80%a7-%f0%9f%94%a5%f0%9f%94%a5">ES6+新特性 🔥🔥</a></p>
+<ul>
+<li>let，const</li>
+<li>
+<p>和 var 区别</p>
+<ul>
+<li>变量提升</li>
+<li>暂时性死区</li>
+<li>块级作用域</li>
+<li>重复声明</li>
+<li>修改声明的变量</li>
+</ul>
+</li>
+<li>数组扩展</li>
+<li>…</li>
+<li>slice</li>
+<li>splice</li>
+<li>对象扩展</li>
+<li>…</li>
+<li>函数扩展</li>
+<li>箭头函数</li>
+<li>set，map</li>
+<li>
+<p>WeakSet/WeakMap</p>
+<ul>
+<li>成员只能是引用类型（对象作为键），而不能是其他类型的值</li>
+</ul>
+</li>
+<li>
+<h2>场景</h2>
+</li>
+<li>promise</li>
+<li>all</li>
+<li>allSettled()</li>
+<li>race</li>
+<li><a href="https://interview.shanejix.com/#/?id=es6-%e4%b8%ad-promise-%e7%9a%84%e7%90%86%e8%a7%a3%ef%bc%9f">ES6 中 Promise 的理解？</a></li>
+<li>generator</li>
+<li>
+<p>场景</p>
+<ul>
+<li>原生对象没有遍历接口，通过 Generator 函数为它加上这个接口，就能使用 for…of 进行遍历了</li>
+<li>Generator 是异步解决的一种方案</li>
+</ul>
+</li>
+<li>proxy</li>
+<li>moduler</li>
+<li>
+<p>为什么</p>
+<ul>
+<li>代码抽象</li>
+<li>代码封装</li>
+<li>代码复用</li>
+<li>依赖管理</li>
+</ul>
+</li>
+<li>decorator</li>
+</ul>
+</li>
+<li><a href="https://interview.shanejix.com/#/?id=javascript-%e4%b8%ad%e7%9a%84%e6%95%b0%e6%8d%ae%e7%b1%bb%e5%9e%8b-%f0%9f%94%a5%f0%9f%94%a5">JavaScript 中的数据类型 🔥🔥</a></li>
+<li><a href="https://interview.shanejix.com/#/?id=javascript-%e4%b8%ad%e7%9a%84%e7%b1%bb%e5%9e%8b%e8%bd%ac%e6%8d%a2%e6%9c%ba%e5%88%b6-%f0%9f%94%a5%f0%9f%94%a5">JavaScript 中的类型转换机制 🔥🔥</a></li>
+<li>
+<p>➕<a href="https://interview.shanejix.com/#/?id=%e5%a6%82%e4%bd%95%e5%ae%9e%e7%8e%b0%e6%b7%b1%e6%8b%b7%e8%b4%9d-%f0%9f%94%a5%f0%9f%94%a5%f0%9f%94%a5">如何实现深拷贝 🔥🔥🔥</a></p>
+<ul>
+<li>浅拷贝</li>
+<li>Object.asign()</li>
+<li>[…arr]</li>
+<li>arr.slice()</li>
+<li>arr.concat()</li>
+<li>深拷贝</li>
+<li>_.deepclone</li>
+<li>
+<p>JSON.stringify()</p>
+<ul>
+<li>undefined</li>
+<li>Symbol</li>
+<li>函数</li>
+</ul>
+</li>
+<li>手写</li>
+</ul>
+</li>
+<li>
+<p>➕<a href="https://interview.shanejix.com/#/?id=%e5%a6%82%e4%bd%95%e7%90%86%e8%a7%a3-javascript-%e4%b8%ad%e7%9a%84-this-%f0%9f%94%a5%f0%9f%94%a5%f0%9f%94%a5">如何理解 JavaScript 中的 this 🔥🔥🔥</a></p>
+<ul>
+<li>是什么</li>
+<li><code class="language-text">this</code> 的值是在代码运行时计算出来的，它取决于`代码上下文</li>
+<li>判断</li>
+<li>默认绑定</li>
+<li>隐式绑定</li>
+<li>new 绑定</li>
+<li>
+<p>显示修改</p>
+<ul>
+<li>call</li>
+<li>apply</li>
+<li>bind</li>
+</ul>
+</li>
+<li>箭头函数</li>
+<li>addEventListener 中的 this 是啥？</li>
+<li>element</li>
+</ul>
+</li>
+<li>
+<p><a href="https://interview.shanejix.com/#/?id=%e5%a6%82%e4%bd%95%e7%90%86%e8%a7%a3-javascript-%e4%b8%ad%e6%89%a7%e8%a1%8c%e4%b8%8a%e4%b8%8b%e6%96%87-%f0%9f%94%a5%f0%9f%94%a5%f0%9f%94%a5">如何理解 JavaScript 中执行上下文 🔥🔥🔥</a></p>
+<ul>
+<li>是什么</li>
+<li>执行上下文是一种对 Javascript 代码执行环境的抽象概念，也就是说只要有 Javascript 代码运行，那么它就一定是运行在执行上下文中</li>
+<li>生命周期</li>
+<li>创建</li>
+<li>执行</li>
+<li>回收</li>
+</ul>
+</li>
+<li>➕<a href="https://interview.shanejix.com/#/?id=javascript-%e4%b8%ad%e7%9a%84%e4%ba%8b%e4%bb%b6%e6%a8%a1%e5%9e%8b-%f0%9f%94%a5">JavaScript 中的事件模型 🔥</a></li>
+<li>➕<a href="https://interview.shanejix.com/#/?id=ajax-%e5%8e%9f%e7%90%86-%f0%9f%94%a5">Ajax 原理 🔥</a></li>
+<li>
+<p><a href="https://interview.shanejix.com/#/?id=%e9%97%ad%e5%8c%85%e7%9a%84%e4%bd%9c%e7%94%a8%e5%92%8c%e5%8e%9f%e7%90%86-%f0%9f%94%a5%f0%9f%94%a5%f0%9f%94%a5">闭包的作用和原理 🔥🔥🔥</a></p>
+<ul>
+<li>是什么？</li>
+<li>函数+变量的总合</li>
+<li>表现</li>
+<li>能够在函数定义的作用域外，使用函数定义作用域内的局部变量，并且不会污染全局</li>
+<li>原理</li>
+<li>基于词法作用域链和垃圾回收机制，通过维持函数作用域的引用，让函数作用域可以在当前作用域外被访问到</li>
+<li>应用</li>
+<li>无论何时何地，如果将函数作为返回值，就会看到闭包在这些函数中的应用</li>
+<li>在定时器，事件监听器，ajax 请求，跨窗口通信，web workers 或者任何其他的异步/同步任务中，只要使用了回调函数，实际上就是使用闭包</li>
+</ul>
+</li>
+<li>➕➕<a href="https://interview.shanejix.com/#/?id=%e5%ae%9e%e7%8e%b0-promise-%f0%9f%94%a5%f0%9f%94%a5%f0%9f%94%a5">实现 Promise 🔥🔥🔥</a></li>
+<li>
+<p>➕<a href="https://interview.shanejix.com/#/?id=es5%e3%80%81es6-%e5%a6%82%e4%bd%95%e5%ae%9e%e7%8e%b0%e7%bb%a7%e6%89%bf-%f0%9f%94%a5%f0%9f%94%a5%f0%9f%94%a5">ES5、ES6 如何实现继承 🔥🔥🔥</a></p>
+<ul>
+<li><a href="https://interview.shanejix.com/#/?id=%e5%8e%9f%e5%9e%8b%e9%93%be%e7%bb%a7%e6%89%bf">原型链继承</a></li>
+<li>一个引用类型继承另一个引用类型的属性和方法</li>
+<li><a href="https://interview.shanejix.com/#/?id=%e5%80%9f%e7%94%a8%e6%9e%84%e9%80%a0%e5%87%bd%e6%95%b0%e7%bb%a7%e6%89%bf">借用构造函数继承</a></li>
+<li>子类型构造函数中调用父类的构造函数，使所有需要继承的属性都定义在实例对象上</li>
+<li><a href="https://interview.shanejix.com/#/?id=%e7%bb%84%e5%90%88%e7%bb%a7%e6%89%bf%ef%bc%88%e4%bc%aa%e7%bb%8f%e5%85%b8%e7%bb%a7%e6%89%bf%ef%bc%89">组合继承（伪经典继承）</a></li>
+<li>使用原型链实现对原型属性和方法的继承，借用构造函数实现对实例属性的继承</li>
+<li><a href="https://interview.shanejix.com/#/?id=%e5%af%84%e7%94%9f%e7%bb%84%e5%90%88%e5%bc%8f%e7%bb%a7%e6%89%bf">寄生组合式继承</a></li>
+<li>借用构造函数来继承属性，使用混合式原型链继承方法</li>
+<li><a href="https://interview.shanejix.com/#/?id=es6-%e4%b8%ad-class-%e7%9a%84%e7%bb%a7%e6%89%bf">ES6 中 class 的继承</a></li>
+</ul>
+</li>
+<li>
+<p><a href="https://interview.shanejix.com/#/?id=new-%e6%93%8d%e4%bd%9c%e7%ac%a6%e7%9a%84%e5%8e%9f%e7%90%86-%f0%9f%94%a5%f0%9f%94%a5%f0%9f%94%a5">New 操作符的原理 🔥🔥🔥</a></p>
+<ul>
+<li>是什么</li>
+<li>通过执行自定义构造函数或内置对象构造函数，生成对应的对象实例</li>
+<li>实现</li>
+</ul>
+</li>
+<li>
+<p><a href="https://interview.shanejix.com/#/?id=%e8%8a%82%e6%b5%81%e5%92%8c%e9%98%b2%e6%8a%96-%f0%9f%94%a5%f0%9f%94%a5%f0%9f%94%a5">节流和防抖 🔥🔥🔥</a></p>
+<ul>
+<li>是什么？</li>
+<li>优化高频触发代码的一种手段，降低事件的触发频率</li>
+<li>节流: n 秒内只运行一次，若在 n 秒内重复触发，只有一次生效</li>
+<li>防抖: n 秒后只运行一次，若在 n 秒内被重复触发，则重新计时</li>
+<li><img src="https://cdn.nlark.com/yuque/0/2022/png/377147/1649744054441-79c38d41-75de-4b68-bb8d-2356524c9859.png#clientId=ubfed43c7-cbb4-4&#x26;crop=0&#x26;crop=0&#x26;crop=1&#x26;crop=1&#x26;from=paste&#x26;id=u244c7e99&#x26;margin=%5Bobject%20Object%5D&#x26;name=image.png&#x26;originHeight=491&#x26;originWidth=750&#x26;originalType=url&#x26;ratio=1&#x26;rotation=0&#x26;showTitle=false&#x26;size=43551&#x26;status=done&#x26;style=none&#x26;taskId=u5c104eea-505d-476d-a32e-48b2c9941bc&#x26;title=#crop=0&#x26;crop=0&#x26;crop=1&#x26;crop=1&#x26;id=qx4ZU&#x26;originHeight=491&#x26;originWidth=750&#x26;originalType=binary&#x26;ratio=1&#x26;rotation=0&#x26;showTitle=false&#x26;status=done&#x26;style=none&#x26;title=" alt="image.png"></li>
+<li>实现</li>
+</ul>
+</li>
+<li>
+<p><a href="https://interview.shanejix.com/#/?id=typescript-%e4%b8%ad%e7%9a%84-interface-%e5%92%8c-type-alias%f0%9f%94%a5%f0%9f%94%a5%f0%9f%94%a5">TypeScript 中的 Interface 和 Type Alias🔥🔥🔥</a></p>
+<ul>
+<li>区别</li>
+<li>Type 不可在定义后重新添加内容，而 Interface 则总是可以扩展新内容</li>
+<li>相比 Interface，Type 并没有实际创建一个新的类型，而是创建一个引用某个类型的名字</li>
+<li>Interface 只能操作对象类型，Type 可以操作任意类型</li>
+</ul>
+</li>
+<li>
+<p>➕➕<a href="https://interview.shanejix.com/#/?id=javascript-%e5%bc%82%e6%ad%a5%e7%bc%96%e7%a8%8b-%f0%9f%94%a5%f0%9f%94%a5%f0%9f%94%a5">JavaScript 异步编程 🔥🔥🔥</a></p>
+<ul>
+<li>是什么？</li>
+<li>JavaScript 是一种同步的、阻塞的、单线程的语言，一次只能执行一个任务。</li>
+<li>但浏览器定义了非同步的 Web APIs，将回调函数插入到事件循环，实现异步任务的非阻塞执行</li>
+<li>方案</li>
+<li><a href="https://interview.shanejix.com/#/?id=%e5%bc%82%e6%ad%a5%e5%9b%9e%e8%b0%83">异步回调</a></li>
+<li><a href="https://interview.shanejix.com/#/?id=%e5%ae%9a%e6%97%b6%e5%99%a8%ef%bc%9asettimeoutsetintervalrequestanimationframe">定时器：setTimeout/setInterval/requestAnimationFrame</a></li>
+<li><a href="https://interview.shanejix.com/#/?id=%e5%8f%91%e5%b8%83%e8%ae%a2%e9%98%85%e6%a8%a1%e5%bc%8f%ef%bc%88publish-subscribe-pattern%ef%bc%89">发布/订阅模式（publish-subscribe pattern）</a></li>
+<li><a href="https://interview.shanejix.com/#/?id=promise">Promise</a></li>
+<li><a href="https://interview.shanejix.com/#/?id=%e7%94%9f%e6%88%90%e5%99%a8-generator">生成器 Generator</a></li>
+<li><a href="https://interview.shanejix.com/#/?id=asyncawait">async/await</a></li>
+<li><a href="https://interview.shanejix.com/#/?id=web-worker">Web Worker</a></li>
+</ul>
+</li>
+<li>
+<p>➕slice 和 splice 的区别</p>
+<ul>
+<li>array.splice(start[, deleteCount[, item1[, item2[, …]]]])</li>
+</ul>
+</li>
+<li>
+<p>➕➕for in / for of 区别</p>
+<ul>
+<li>for in</li>
+<li>迭代一个对象的除<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Symbol">Symbol</a>以外的<a href="https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Enumerability_and_ownership_of_properties">可枚举</a>属性，包括继承的可枚举属性</li>
+<li>为遍历对象属性而构建的</li>
+<li>for of</li>
+<li>循环可迭代对象（数组，Set，Map）</li>
+<li>常用于数组迭代</li>
+</ul>
+</li>
+<li>➕forEach / map 区别</li>
+</ul>
+<h2>肆、Browser 相关</h2>
+<ul>
+<li>
+<p><a href="https://interview.shanejix.com/#/?id=%e6%b5%8f%e8%a7%88%e5%99%a8%e8%b7%a8%e5%9f%9f-%f0%9f%94%a5%f0%9f%94%a5%f0%9f%94%a5">浏览器跨域 🔥🔥🔥</a></p>
+<ul>
+<li>是什么</li>
+<li>同源策略(same-origin policy)是浏览器的为了请求安全而做的限制,协议(protocol)+主机(host)+端口(port)不一致则为跨域</li>
+<li>后端不受此限制,可以通过 CORS 等方式解决跨域</li>
+<li>方案</li>
+<li>
+<p><a href="https://interview.shanejix.com/#/?id=cors-cross-origin-resource-sharing">CORS (Cross-Origin Resource Sharing)</a></p>
+<ul>
+<li>只需要后端支持</li>
+<li>在响应头中添加 Access-Control-Allow-*</li>
+</ul>
+</li>
+<li>
+<p><a href="https://interview.shanejix.com/#/?id=%e5%8f%8d%e5%90%91%e4%bb%a3%e7%90%86">反向代理</a></p>
+<ul>
+<li>只需要后端支持</li>
+<li>依赖同源的服务端对请求做一个转发处理，将跨域请求转换成同源请求</li>
+</ul>
+</li>
+<li>
+<p><a href="https://interview.shanejix.com/#/?id=jsonp">JSONP</a></p>
+<ul>
+<li>需要服务端和前端配合实现</li>
+<li>利用了浏览器加载 JavaScript 资源文件时不受同源策略的限制而实现跨域获取数据</li>
+</ul>
+</li>
+<li>
+<p><a href="https://interview.shanejix.com/#/?id=%e9%9d%9e%e5%b8%b8%e7%94%a8%e6%96%b9%e5%bc%8f">非常用方式</a></p>
+<ul>
+<li>postMessage</li>
+<li>即在两个 origin 下分别部署一套页面 A 与 B，</li>
+<li>A 页面通过 iframe 加载 B 页面并监听消息，B 页面发送消息</li>
+<li>window.name</li>
+<li>主要是利用 <a href="http://window.name/">window.name</a> 页面跳转不改变的特性实现跨域，</li>
+<li>即 iframe 加载一个跨域页面，设置 <a href="http://window.name/">window.name</a>，跳转到同域页面，可以通过 $(‘iframe’).<a href="http://contentwindow.name/">contentWindow.name</a> 拿到跨域页面的数据</li>
+<li>document.domain</li>
+<li>可将相同一级域名下的子域名页面的 document.domain 设置为一级域名实现跨域</li>
+<li>可将同域不同端口的 document.domain 设置为同域名实现跨域（端口被置为 null）</li>
+</ul>
+</li>
+<li>
+<p>扩展</p>
+<ul>
+<li>LocalStorage / SessionStorage 跨域</li>
+<li>跨域与监控</li>
+<li>跨域与图片</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p><a href="https://interview.shanejix.com/#/?id=%e6%b5%8f%e8%a7%88%e5%99%a8%e7%9a%84%e9%87%8d%e6%8e%92%e9%87%8d%e7%bb%98-%f0%9f%94%a5%f0%9f%94%a5%f0%9f%94%a5">浏览器的重排重绘 🔥🔥🔥</a></p>
+<ul>
+<li>是什么？</li>
+<li>浏览器渲染大致分为四个阶段，在解析完 HTML 依次进入 layout （重排）和 paint （重绘）。</li>
+<li>节点或者样式的变更以及对布局信息的访问等，都可能导致重排或者重绘；</li>
+<li>重排和重绘在主线程中进行，者意味着不合理的重排和重绘会导致页面卡顿等性能问题</li>
+<li>为什么？</li>
+<li>不合理的重排和重绘会导致占用浏览器主线程，导致卡顿等性能问题</li>
+<li>浏览器渲染关键路径</li>
+<li>
+<p>parse HTML</p>
+<ul>
+<li>dom tree</li>
+<li>cssom tree</li>
+<li>render tree</li>
+</ul>
+</li>
+<li>
+<p>lauyout</p>
+<ul>
+<li>尺寸</li>
+<li>位置</li>
+</ul>
+</li>
+<li>
+<p>paint</p>
+<ul>
+<li>节点到像素</li>
+<li>发生在多个图层</li>
+</ul>
+</li>
+<li>
+<p>composition</p>
+<ul>
+<li>合并图层</li>
+<li>渲染到屏幕</li>
+</ul>
+</li>
+<li>触发</li>
+<li>
+<p>节点变更-导致重排</p>
+<ul>
+<li>盒子尺寸、类型</li>
+<li>定位方案</li>
+<li>文档中节点关系</li>
+<li>外部信息（视口）</li>
+<li>第一次渲染</li>
+</ul>
+</li>
+<li>
+<p>外观变化-导致重绘</p>
+<ul>
+<li>样式改变</li>
+</ul>
+</li>
+<li>
+<p>获取布局信息（会及时计算所以会重排）</p>
+<ul>
+<li>属性</li>
+<li>offset 系列</li>
+<li>client 系列</li>
+<li>scroll 系列</li>
+<li>方法</li>
+<li>getComputeStyle</li>
+</ul>
+</li>
+<li>减少（方案）</li>
+<li>对 DOM 进行批量写入和读取（通过虚拟 DOM 或者 DocumentFragment 实现）</li>
+<li>避免对样式频繁操作</li>
+<li>避免频繁读取样式信息，使用变量缓存</li>
+</ul>
+</li>
+<li>
+<p>➕➕<a href="https://interview.shanejix.com/#/?id=%e6%b5%8f%e8%a7%88%e5%99%a8%e4%bb%8e%e8%be%93%e5%85%a5%e7%bd%91%e5%9d%80%e5%88%b0%e9%a1%b5%e9%9d%a2%e5%b1%95%e7%a4%ba%e7%9a%84%e8%bf%87%e7%a8%8b-%f0%9f%94%a5%f0%9f%94%a5%f0%9f%94%a5">浏览器从输入网址到页面展示的过程 🔥🔥🔥</a></p>
+<ul>
+<li>url 输入</li>
+<li>合法性校验</li>
+<li>dns 解析</li>
+<li>浏览器 DNS 缓存</li>
+<li>操作系统的 DNS 缓存（hosts）</li>
+<li>本地域名服务器（递归查询）</li>
+<li>上级域名服务器（迭代查询）</li>
+<li>建立 tcp 连接（三次握手）</li>
+<li>-</li>
+<li>发送 http 请求</li>
+<li>请求行</li>
+<li>请求头</li>
+<li>请求体</li>
+<li>服务器响应请求</li>
+<li>响应行</li>
+<li>响应头</li>
+<li>响应体</li>
+<li>浏览器解析页面</li>
+<li>
+<p>查看响应头的信息，根据不同的指示做对应处理</p>
+<ul>
+<li>重定向</li>
+<li>存储 cookie</li>
+<li>解压 gzip</li>
+<li>缓存资源</li>
+<li>根据不同的资源类型（Content-Type）采用不同的解析方式</li>
+</ul>
+</li>
+<li>
+<p>浏览器渲染关键路径</p>
+<ul>
+<li>parse HTML</li>
+<li>dom tree</li>
+<li>cssom tree</li>
+<li>render tree</li>
+<li>lauyout</li>
+<li>尺寸</li>
+<li>位置</li>
+<li>paint</li>
+<li>节点到像素</li>
+<li>发生在多个图层</li>
+<li>composition</li>
+<li>合并图层</li>
+<li>渲染到屏幕</li>
+</ul>
+</li>
+<li>断开 tcp 连接（四次挥手）</li>
+<li>tab 标签页关闭时</li>
+</ul>
+</li>
+<li>
+<p>➕<a href="https://interview.shanejix.com/#/?id=%e6%b5%8f%e8%a7%88%e5%99%a8%e6%b8%b2%e6%9f%93%e6%9c%ba%e5%88%b6-%f0%9f%94%a5%f0%9f%94%a5%f0%9f%94%a5">浏览器渲染机制 🔥🔥🔥</a></p>
+<ul>
+<li>关键路径</li>
+<li>
+<p>parse HTML</p>
+<ul>
+<li>构建 dom tree</li>
+<li>Conversion（转换）：字节 =》字符</li>
+<li>Tokenizing（分词）：, 等标记</li>
+<li>Lexing（语法分析）：标记将被转换为对象（包含属性，属性值，文本等）</li>
+<li>DOM construction（DOM 构造）：连接对象生成树结构</li>
+<li>预加载次级资源</li>
+<li>预加载扫描器（preload scanner）线程并发加载图片、JavaScript、CSS、字体等资源</li>
+<li>遇到 script 标签时，会暂停 HTML 的解析</li>
+</ul>
+</li>
+<li>
+<p>style 样式计算</p>
+<ul>
+<li>构建 cssom tree</li>
+<li>搜集样式，建立索引</li>
+<li>遍历 DOM 树，通过选择器匹配样式，并设置样式</li>
+<li>层叠样式，生成最终样式</li>
+<li>CSSOM 和 DOM 是并行构建</li>
+<li>CSSOM 会阻塞 JS 的执行（因为 JS 可能会操作样式信息）</li>
+<li>但在进入下一阶段之前，必须等待 CSSOM 构建完成（这也是通常所说的 CSSOM 会阻塞渲染）</li>
+</ul>
+</li>
+<li>
+<p>lauyout</p>
+<ul>
+<li>合并 layout tree</li>
+<li>
+<p>计算可见的节点及其样式</p>
+<ul>
+<li>从 dom 树 遍历每个可见节点</li>
+<li>为其找到适配的 CSSOM 规则并应用（包含内容和样式）</li>
+</ul>
+</li>
+<li>
+<p>确切位置和大小</p>
+<ul>
+<li>根据 CSS 盒模型及视觉格式化模型，计算每个元素的各种生成盒的大小和位置</li>
+<li>计算块级元素、行内元素、浮动元素、各种定位元素的大小和位置</li>
+<li>计算文字，滚动区域的大小和位置</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>paint</p>
+<ul>
+<li>将 LayoutObject 树转换成供合成器使用的高效渲染格式</li>
+<li>节点到像素</li>
+<li>发生在多个图层</li>
+</ul>
+</li>
+<li>
+<p>composition</p>
+<ul>
+<li>合并图层</li>
+<li>渲染到屏幕</li>
+</ul>
+</li>
+<li>优化性能</li>
+<li>
+<p>保证渲染流程不被阻塞，避免不必要的绘制计算和重排重绘</p>
+<ul>
+<li>（以动画为例）</li>
+<li>使用合适的网页分层技术：如使用多层 canvas，将动画背景，运动主体，次要物体分层，这样每一帧需要变化的就只是一个或部分合成层，而不是整个页面</li>
+<li>使用 CSS Transforms 和 Animations：它可以让浏览器仅仅使用合成器来合成所有的层就可以达到动画效果，而不需要重新计算布局，重新绘制图形</li>
+</ul>
+</li>
+<li>
+<p>优化影响渲染的资源</p>
+<ul>
+<li>关键 CSS 资源放在头部加载。</li>
+<li>JS 通常放在页面底部。</li>
+<li>为 JS 添加 async 和 defer 属性。</li>
+<li>body 中尽量不要出现 CSS 和 JS。</li>
+<li>为 img 指定宽高，避免图像加载完成后触发重排。</li>
+<li>避免使用 table, iframe 等慢元素。原因是 table 会等到它的 dom 树全部生成后再一次性插入页面中；iframe 内资源的下载过程会阻塞父页面静态资源的下载及 css, dom 树的解析</li>
+</ul>
+</li>
+<li>用 GPU 硬件加速</li>
+</ul>
+</li>
+<li>
+<p>➕<a href="https://interview.shanejix.com/#/?id=%e5%9e%83%e5%9c%be%e5%9b%9e%e6%94%b6%e6%9c%ba%e5%88%b6-%f0%9f%94%a5%f0%9f%94%a5">垃圾回收机制 🔥🔥</a></p>
+<ul>
+<li>是什么？</li>
+<li>一种内存自动管理机制， 垃圾回收器（Garbage Collector）可以自动回收分配给程序的已经不再使用的内存</li>
+<li>常见的 GC 算法有引用计数法和标记清除法等</li>
+<li>内存泄漏</li>
+<li>应当被回收的对象没有被正常回收</li>
+<li>方案</li>
+<li>标记清除</li>
+<li>引用计数</li>
+</ul>
+</li>
+<li>
+<p>➕➕<a href="https://interview.shanejix.com/#/?id=%e6%b5%8f%e8%a7%88%e5%99%a8%e4%ba%8b%e4%bb%b6%e5%be%aa%e7%8e%af-%f0%9f%94%a5%f0%9f%94%a5%f0%9f%94%a5">浏览器事件循环 🔥🔥🔥</a></p>
+<ul>
+<li>是什么？</li>
+<li>一种程序结构，消息分发器</li>
+<li>浏览器主线程是单线程的，为了使定时器，用户脚本等异步操作非阻塞的运行，浏览器通过任务队列来管理异步任务</li>
+<li>事件调度</li>
+<li>执行同步代码。</li>
+<li>执行一个宏任务（执行栈中没有就从任务队列中获取）</li>
+<li>执行过程中如果遇到微任务，就将它添加到微任务的任务队列中</li>
+<li>宏任务执行完毕后，立即执行当前微任务队列中的所有微任务（依次执行）</li>
+<li>当前宏任务执行完毕，开始检查渲染，然后渲染线程接管进行渲染</li>
+<li>渲染完毕后，JavaScript 线程继续接管，开始下一个循环</li>
+<li><a href="https://interview.shanejix.com/#/?id=%e5%ae%8f%e4%bb%bb%e5%8a%a1%e4%b8%8e%e5%be%ae%e4%bb%bb%e5%8a%a1">宏任务与微任务</a></li>
+<li>宏任务主要包含：</li>
+<li>
+<p>script（整体代码）、</p>
+<ul>
+<li>setTimeout、</li>
+<li>setInterval、</li>
+<li>setImmediate、</li>
+<li>I/O、</li>
+<li>UI 交互事件</li>
+</ul>
+</li>
+<li>
+<p>微任务主要包含：</p>
+<ul>
+<li>Promise、</li>
+<li>MutationObserver</li>
+</ul>
+</li>
+<li>常考例题</li>
+<li><a href="https://juejin.cn/post/6844903762478235656">令人费解的 async/await 执行顺序 - 掘金 (juejin.cn)</a></li>
+</ul>
+</li>
+<li>
+<p><a href="https://interview.shanejix.com/#/?id=%e5%a6%82%e4%bd%95%e5%ae%9a%e4%bd%8d%e5%86%85%e5%ad%98%e6%b3%84%e9%9c%b2-%f0%9f%94%a5">如何定位内存泄露 🔥</a></p>
+<ul>
+<li>devtools</li>
+<li>Performance</li>
+<li>Memory</li>
+<li>—inspect</li>
+</ul>
+</li>
+<li>
+<p>➕➕<a href="https://interview.shanejix.com/#/?id=%e5%89%8d%e7%ab%af%e8%b7%af%e7%94%b1%e5%ae%9e%e7%8e%b0-%f0%9f%94%a5%f0%9f%94%a5%f0%9f%94%a5">前端路由实现 🔥🔥🔥</a></p>
+<ul>
+<li>是什么？</li>
+<li>源地址到目标地址的活动</li>
+<li>Web：url 到对应程序的映射</li>
+<li>实现</li>
+<li>前后端均可实现</li>
+<li>
+<p>前端路由</p>
+<ul>
+<li>hash 路由</li>
+<li>触发 onhaschange 监听 hash 的变化</li>
+<li>不会重新刷新页面</li>
+<li>改变浏览器历史记录</li>
+<li>history 路由(依赖 History API 里的两个方法和一个事件)</li>
+<li>history.pushState</li>
+<li>hisstory.replaceState</li>
+<li>popstate</li>
+</ul>
+</li>
+<li>应用</li>
+<li>无刷新的单页应用开发模式 SPA</li>
+<li>优缺点</li>
+<li>
+<p>hash</p>
+<ul>
+<li>兼容性最佳</li>
+<li>无需服务端配置</li>
+<li>服务端无法获取 hash 部分内容</li>
+<li>可能和锚点功能冲突</li>
+<li>SEO 不友好</li>
+</ul>
+</li>
+<li>
+<p>histroy</p>
+<ul>
+<li>服务端可获取完整的链接和参数。</li>
+<li>前端监控友好。</li>
+<li>SEO 相对 Hash 路由友好。</li>
+<li>兼容性稍弱。</li>
+<li>需要服务端额外配置（各 path 均指向同一个 HTML）。</li>
+</ul>
+</li>
+<li>-</li>
+</ul>
+</li>
+<li><a href="https://interview.shanejix.com/#/?id=dom-ampamp-bom%f0%9f%94%a5">DOM &#x26;&#x26; BOM🔥</a></li>
+<li>
+<p>➕ 正则表达式</p>
+<ul>
+<li>创建</li>
+<li>字面量</li>
+<li>RegExp 构造函数</li>
+<li>匹配规则</li>
+<li>贪婪模式</li>
+<li>懒惰模式</li>
+<li>分组</li>
+<li>匹配方法</li>
+<li>match、matchAll、search、replace、split</li>
+<li>test、exec</li>
+</ul>
+</li>
+</ul>
+<h2>伍、网络协议</h2>
+<ul>
+<li>
+<p>➕<a href="https://interview.shanejix.com/#/?id=%e5%89%8d%e7%ab%af%e5%ae%89%e5%85%a8-%f0%9f%94%a5%f0%9f%94%a5%f0%9f%94%a5">前端安全 🔥🔥🔥</a></p>
+<ul>
+<li>XSS（跨站脚本攻击）</li>
+<li>
+<p>是什么</p>
+<ul>
+<li>将代码注入到其他用户浏览器的攻击方式</li>
+</ul>
+</li>
+<li>
+<p>类型</p>
+<ul>
+<li>反射型（非持久性）</li>
+<li>
+<p>原理：</p>
+<ul>
+<li>攻击者通过在 URL 插入恶意代码，其他用户访问该恶意链接时，服务端在 URL 取出恶意代码后拼接至 HTML 中返回给用户浏览器</li>
+</ul>
+</li>
+<li>
+<p>要点：</p>
+<ul>
+<li>通过 URL 插入恶意代码</li>
+<li>有服务端参与</li>
+<li>需要用户访问特定链接</li>
+</ul>
+</li>
+<li>存储型（持久性）</li>
+<li>
+<p>原理：</p>
+<ul>
+<li>攻击者将注入型脚本提交至被攻击网站数据库中，当其他用户浏览器请求数据时，注入脚本从服务器返回并执行</li>
+</ul>
+</li>
+<li>
+<p>要点：</p>
+<ul>
+<li>恶意代码存储在目标网站服务器上</li>
+<li>有服务端参与</li>
+<li>只要用户访问被注入恶意脚本的页面时，就会被攻击</li>
+</ul>
+</li>
+<li>DOM 型</li>
+<li>
+<p>原理：</p>
+<ul>
+<li>攻击者通过在 URL 插入恶意代码，客户端脚本取出 URL 中的恶意代码并执行。</li>
+</ul>
+</li>
+<li>
+<p>要点：</p>
+<ul>
+<li>在客户端发生</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p><a href="https://interview.shanejix.com/#/?id=%e9%98%b2%e8%8c%83-xss">防范 XSS</a></p>
+<ul>
+<li>对于外部传入的内容进行充分转义</li>
+<li>开启 CSP（Content Security Policy，内容安全策略），规定客户端哪些外部资源可以加载和执行，降低 XSS 风险</li>
+<li>设置 Cookie httpOnly 属性，禁止 JavaScript 读取 Cookie 防止被窃取</li>
+</ul>
+</li>
+<li>CSRF（跨站请求伪造）</li>
+<li>
+<p>是什么</p>
+<ul>
+<li>窃用其身份在对应的网站进行操作</li>
+</ul>
+</li>
+<li>
+<p>要点：</p>
+<ul>
+<li>利用浏览器在发送 HTTP 请求时会自动带上 Cookie 的原理，冒用受害者身份请求</li>
+<li>攻击一般发生在第三方网站上</li>
+<li>攻击者只能“冒用”受害者的身份凭证，并不能获取</li>
+<li>跨站请求有多种方式，常见的有图片 URL、超链接、Form 提交等</li>
+</ul>
+</li>
+<li>
+<p><a href="https://interview.shanejix.com/#/?id=%e9%98%b2%e8%8c%83-csrf">防范 CSRF</a></p>
+<ul>
+<li>使用 CSRF Token 验证用户身份</li>
+<li>双重 Cookie 验证</li>
+<li>设置 Cookie 的 SameSite 属性可以用来限制第三方 Cookie 的使用</li>
+</ul>
+</li>
+<li>中间人攻击（MITM）</li>
+<li>
+<p>是什么</p>
+<ul>
+<li>攻击者与通讯的两端分别创建独立的联系，在通讯中充当一个中间人角色对数据进行监听、拦截甚至篡改</li>
+</ul>
+</li>
+<li>
+<p>原理</p>
+<ul>
+<li>拦截</li>
+<li>解密</li>
+<li>SSL 劫持（伪造证书）</li>
+</ul>
+</li>
+<li>
+<p><a href="https://interview.shanejix.com/#/?id=%e4%b8%ad%e9%97%b4%e4%ba%ba%e6%94%bb%e5%87%bb%e9%98%b2%e8%8c%83">中间人攻击防范</a></p>
+<ul>
+<li>对于开发者来说：</li>
+<li>支持 HTTPS</li>
+<li>对于用户来说：</li>
+<li>尽可能使用 HTTPS 链接</li>
+<li>避免连接不知名的 WiFi 热点</li>
+<li>不忽略不安全的浏览器通知</li>
+<li>公共网络不进行涉及敏感信息的交互</li>
+<li>用可信的第三方 CA 厂商，不下载来源不明的证书</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>➕➕<a href="https://interview.shanejix.com/#/?id=http-%e7%bc%93%e5%ad%98%e6%9c%ba%e5%88%b6-%f0%9f%94%a5%f0%9f%94%a5%f0%9f%94%a5">HTTP 缓存机制 🔥🔥🔥</a></p>
+<ul>
+<li>强缓存</li>
+<li>
+<p>是什么</p>
+<ul>
+<li>可以通过 Expires / Cache-Control 控制</li>
+<li>命中强缓存时不会发起网络请求，资源直接从本地获取，浏览器显示状态码 200 from cache</li>
+</ul>
+</li>
+<li>
+<p>expires</p>
+<ul>
+<li>HTTP/1.0 产物。</li>
+<li>优先级低于 Cache-control: max-age。</li>
+<li>缺点：使用本地时间判断是否过期，而本地时间是可修改的且并非一定准确的</li>
+</ul>
+</li>
+<li>
+<p>cache-control</p>
+<ul>
+<li>HTTP/1.1 产物</li>
+<li>优先级高于 Expires</li>
+<li>正确区分 no-cache / no-store 的作用</li>
+<li>no-cache 强制客户端向服务器发起请求（禁用强缓存，可用协商缓存）。</li>
+<li>no-store 禁止一切缓存，包含协商缓存也不可用。</li>
+</ul>
+</li>
+<li>协商缓存</li>
+<li>
+<p>是什么</p>
+<ul>
+<li>可以通过 Last-Modified / If-Modified-Since 和 Etag / If-None-Match 控制，</li>
+<li>开启协商缓存时向服务器发送的请求会带上缓存标识，若命中协商缓存，服务器返回 304 Not Modified 表示浏览器可以使用本地缓存文件，否则返回 200 OK 正常返回数据</li>
+</ul>
+</li>
+<li>
+<p>Last-Modified / If-Modified-Since</p>
+<ul>
+<li>通过资源的最后修改时间来验证缓存。</li>
+<li>优先级低于 ETag / If-None-Match。</li>
+<li>缺点：只能精确到秒，若 1s 内多次修改资源 Last-Modified 不会变化</li>
+</ul>
+</li>
+<li>
+<p>ETag / If-None-Match</p>
+<ul>
+<li>通过唯一标识来验证缓存。</li>
+<li>优先级高于 Last-Modified / If-Modified-Since。</li>
+</ul>
+</li>
+<li><a href="https://interview.shanejix.com/#/?id=%e7%bc%93%e5%ad%98%e7%9a%84%e4%bc%98%e7%bc%ba%e7%82%b9">优缺点</a></li>
+<li>
+<p>优点</p>
+<ul>
+<li>节省了不必要的数据传输，节省带宽。</li>
+<li>减少服务端的负担，提高网站性能。</li>
+<li>降低网络延迟，加快页面响应速度，增强用户体验。</li>
+</ul>
+</li>
+<li>
+<p>缺点</p>
+<ul>
+<li>不恰当的缓存设置可能会导致资源更新不及时，导致用户获取信息滞后。</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>➕<a href="https://interview.shanejix.com/#/?id=http2-%e5%92%8c-http11-%e7%9a%84%e5%af%b9%e6%af%94-%f0%9f%94%a5%f0%9f%94%a5%f0%9f%94%a5">HTTP/2 和 HTTP/1.1 的对比 🔥🔥🔥</a></p>
+<ul>
+<li>HTTP/1.1 相较 HTTP/1.0 的改进和优化：</li>
+<li>
+<p>持久连接</p>
+<ul>
+<li>Connection: keep-alive</li>
+</ul>
+</li>
+<li>
+<p>HTTP 管道化</p>
+<ul>
+<li>多个 HTTP 同时请求，响应必须按照请求发出的顺序依次返回</li>
+<li>问题</li>
+<li>对头阻塞</li>
+<li>服务端缓存前序请求</li>
+</ul>
+</li>
+<li>
+<p>分块编码传输</p>
+<ul>
+<li>Transfer-Encoding: chunked</li>
+</ul>
+</li>
+<li>
+<p>新增 Host 头处理</p>
+<ul>
+<li>http/1.0 每台服务器都绑定一个唯一的 IP 地址(因此一台服务器也无法搭建多个 Web 站点)</li>
+</ul>
+</li>
+<li>
+<p>断点续传、并行下载</p>
+<ul>
+<li>请求头字段 Range</li>
+<li>响应头字段 Content-Range</li>
+</ul>
+</li>
+<li>HTTP/1.1 的缺点：</li>
+<li>队头阻塞（Head-of-line blocking）</li>
+<li>
+<p>头部冗余</p>
+<ul>
+<li>HTTP 请求每次都会带上请求头,若此时 cookie 也携带大量数据</li>
+</ul>
+</li>
+<li>TCP 连接数限制</li>
+<li>HTTP/2 的优点：</li>
+<li>
+<p>二进制分帧层</p>
+<ul>
+<li>在 HTTP/1.x 中传输数据使用的是纯文本形式的报文,需要不断地读入字节直到遇到分隔符为</li>
+<li>HTTP/2 则是采用二进制编码，将请求和响应数据分割为一个或多个的体积小的帧</li>
+</ul>
+</li>
+<li>
+<p>多路复用</p>
+<ul>
+<li>并行地处理多个请求和响应</li>
+</ul>
+</li>
+<li>Header 压缩</li>
+<li>服务端推送</li>
+</ul>
+</li>
+<li>
+<p>get 和 post 的区别</p>
+<ul>
+<li>从缓存的角度，GET 请求会被浏览器主动缓存下来，留下历史记录，而 POST 默认不会。</li>
+<li>从编码的角度，GET 只能进行 URL 编码，只能接收 ASCII 字符，而 POST 没有限制。</li>
+<li>从参数的角度，GET 一般放在 URL 中，因此不安全，POST 放在请求体中，更适合传输敏感信息。</li>
+<li>从幂等性的角度，GET 是幂等的，而 POST 不是。(幂等表示执行相同的操作，结果也是相同的)</li>
+<li>从 TCP 的角度，GET 请求会把请求报文一次性发出去，而 POST 会分为两个 TCP 数据包，首先发 header 部分，如果服务器响应 100(continue)， 然后发 body 部分。(火狐浏览器除外，它的 POST 请求只发一个 TCP 包)</li>
+</ul>
+</li>
+<li>
+<p>➕https</p>
+<ul>
+<li><a href="http://www.ruanyifeng.com/blog/2014/09/illustration-ssl.html">图解 SSL/TLS 协议 - 阮一峰的网络日志 (ruanyifeng.com)</a></li>
+</ul>
+</li>
+</ul>
+<h2>陆、前端工程化</h2>
+<ul>
+<li>
+<p>➕<a href="https://interview.shanejix.com/#/?id=webpack-%e5%b7%a5%e4%bd%9c%e5%8e%9f%e7%90%86-%f0%9f%94%a5%f0%9f%94%a5%f0%9f%94%a5">Webpack 工作原理 🔥🔥🔥</a></p>
+<ul>
+<li>是什么？</li>
+<li>webpack 是一种模块打包工具,可以将各类资源(js,css,图片,字体等-一切皆可打包)转译组合为 JS 格式 的 bundle 文件</li>
+<li>为什么？</li>
+<li>提高效率</li>
+<li><a href="https://interview.shanejix.com/#/?id=%e5%9f%ba%e6%9c%ac%e6%a6%82%e5%bf%b5">基本概念</a></li>
+<li>Entry：入口，Webpack 执行构建的第一步将从 Entry 开始，可抽象成输入</li>
+<li>Module：模块，在 Webpack 里一切皆模块，一个模块对应着一个文件。Webpack 会从配置的 Entry 开始递归找出所有依赖的模块</li>
+<li>Chunk：代码块，一个 Chunk 由多个模块组合而成，用于代码合并与分割</li>
+<li>Loader：模块转换器，用于把模块原内容按照需求转换成新内容</li>
+<li>Plugin：扩展插件，在 Webpack 构建流程中的特定时机会广播出对应的事件，插件可以监听这些事件的发生，在特定时机做对应的事情</li>
+<li><a href="https://interview.shanejix.com/#/?id=%e6%a0%b8%e5%bf%83%e4%bb%bb%e5%8a%a1">核心任务</a></li>
+<li>完成内容转化和资源合并,可以分为以下三大阶段</li>
+<li>
+<p>初始化阶段</p>
+<ul>
+<li>读取与合并配置参数</li>
+<li>实例化 Compiler</li>
+<li>加载 Plugin</li>
+</ul>
+</li>
+<li>
+<p>编译阶段</p>
+<ul>
+<li>从 Entry 发出，针对每个 Module 串行调用对应的 Loader 去翻译文件内容</li>
+<li>再找到该 Module 依赖的 Module，递归地进行编译处理</li>
+</ul>
+</li>
+<li>
+<p>输出阶段</p>
+<ul>
+<li>对编译后的 Module 组合成 Chunk</li>
+<li>把 Chunk 转换成文件，输出到文件系统</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>➕➕<a href="https://interview.shanejix.com/#/?id=%e5%89%8d%e7%ab%af%e6%a8%a1%e5%9d%97%e5%8c%96%e8%a7%84%e8%8c%83-%f0%9f%94%a5%f0%9f%94%a5%f0%9f%94%a5">前端模块化规范 🔥🔥🔥</a></p>
+<ul>
+<li>是什么？</li>
+<li><a href="https://nodejs.org/api/modules.html#modules_modules_commonjs_modules">CommonJS</a>: 主要是 Node.js 使用，通过 require 同步加载模块，exports 导出内容</li>
+<li><a href="https://en.wikipedia.org/wiki/Asynchronous_module_definition">AMD</a>: 主要是浏览器端使用，通过 require 异步加载模块，通过 define 定义模块和依赖，推崇依赖前置</li>
+<li><a href="https://github.com/seajs/seajs/issues/242">CMD</a>: 和 AMD 比较类似，主要是浏览器端使用，通过 require 异步加载模块，exports 导出内容，推崇依赖就近</li>
+<li><a href="https://github.com/umdjs/umd/">UMD</a>: 通用模块规范，是 CommonJS、AMD 两个规范的大融合，是跨平台的解决方案</li>
+<li>ESM: 官方模块化规范，现代浏览器原生支持，通过 import 异步加载模块，export 导出内容</li>
+<li>为什么？</li>
+<li>模块化可以解决代码之间的变量、函数、对象等命名的冲突/污染问题，良好的模块化设计可以降低代码之间的耦合关系，提高代码的可维护性、可扩展性以及复用性</li>
+<li>模块化规范的作用是为了规范 JavaScript 模块的定义和加载机制，以统一的方式导出和加载模块，降低学习使用成本，提高开发效率</li>
+<li>优缺点</li>
+<li>-</li>
+</ul>
+</li>
+<li>
+<p><a href="https://interview.shanejix.com/#/?id=babel-%e7%9a%84%e4%bd%9c%e7%94%a8%e5%92%8c%e5%8e%9f%e7%90%86-%f0%9f%94%a5%f0%9f%94%a5%f0%9f%94%a5">Babel 的作用和原理 🔥🔥🔥</a></p>
+<ul>
+<li>是什么？</li>
+<li>Babel 是 JavaScript 编译器</li>
+<li>Babel 内部原理是将 JS 代码转换为 AST，对 AST 应用各种插件进行处理，最终输出编译后的 JS 代码</li>
+<li><a href="https://interview.shanejix.com/#/?id=babel-%e7%bc%96%e8%af%91%e6%b5%81%e7%a8%8b">Babel 编译流程</a></li>
+<li>
+<p>解析阶段：Babel 默认使用 @babel/parser 将代码转换为 AST。解析一般分为两个阶段：词法分析和语法分析</p>
+<ul>
+<li>词法分析：对输入的字符序列做标记化(tokenization)操作。</li>
+<li>语法分析：处理标记与标记之间的关系，最终形成一颗完整的 AST 结构。</li>
+</ul>
+</li>
+<li>
+<p>转换阶段：</p>
+<ul>
+<li>Babel 使用 @babel/traverse 提供的方法对 AST 进行深度优先遍历，调用插件对关注节点的处理函数，按需对 AST 节点进行增删改操作</li>
+</ul>
+</li>
+<li>
+<p>生成阶段：</p>
+<ul>
+<li>Babel 默认使用 @babel/generator 将上一阶段处理后的 AST 转换为代码字符串</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p><a href="https://interview.shanejix.com/#/?id=%e8%b0%88%e4%b8%8b-webpack-loader-%e7%9a%84%e6%9c%ba%e5%88%b6-%f0%9f%94%a5%f0%9f%94%a5%f0%9f%94%a5">谈下 webpack loader 的机制 🔥🔥🔥</a></p>
+<ul>
+<li>是什么？</li>
+<li>loader 本质上是一个函数，该函数对接收到的内容进行转换，返回转换后的结果</li>
+<li>webpack 本身只能处理 JavaScript 和 JSON 文件，而 loader 为 webpack 添加了处理其他类型文件的能力。loader 将其他类型的文件转换成有效的 webpack modules（如 ESmodule、CommonJS、AMD），webpack 能消费这些模块，并将其添加到依赖关系图中</li>
+<li>常见的 loader 有：</li>
+<li>raw-loader：加载文件原始内容。</li>
+<li>file-loader：将引用文件输出到目标文件夹中，在代码中通过相对路径引用输出的文件。</li>
+<li>url-loader：和 file-loader 类似，但是能在文件很小的情况下以 base64 的方式将文件内容注入到代码中。</li>
+<li>babel-loader：将 ES 较新的语法转换为浏览器可以兼容的语法。</li>
+<li>style-loader：将 CSS 代码注入到 JavaScript 中，通过 DOM 操作加载 CSS。</li>
+<li>css-loader：加载 CSS，支持模块化、压缩、文件导入等特性。</li>
+</ul>
+</li>
+<li>
+<p>➕➕➕ 提高 webpack 的构建速度</p>
+<ul>
+<li>缩小查找范围</li>
+<li>指定 loader 的 include，exlude，正则</li>
+<li>指定 node_modules 为决定路径，优化 resolve.modules</li>
+<li>指定文件后缀，合理使用 resolve.extensions</li>
+<li>优化 resolve.alias</li>
+<li>使用缓存，cache-loader</li>
+<li>启用多线程</li>
+<li>合理使用 soucemap</li>
+<li>开发模式上 vite</li>
+</ul>
+</li>
+<li>
+<p>➕ 为什么用 webpack 用 gulp 不行么</p>
+<ul>
+<li>gulp 强调的是一个前端构建工作流（配置一系列的 task（压缩，编译，复制，启动）并发或者按照一定顺序执行）</li>
+<li>webpack 侧重打包（模块化）可以把开发中所有的资源（js，css，图片，字体）都看作模块，通过 loader 和 plugin 进行处理，最终生成 bundle</li>
+<li><a href="https://www.cnblogs.com/lovesong/p/6413546.html">gulp 与 webpack 的区别 - 海角在眼前 - 博客园 (cnblogs.com)</a></li>
+</ul>
+</li>
+<li>
+<p>➕ 为什么使用 monorepo？</p>
+<ul>
+<li>mutirepo 的痛点</li>
+<li>代码难以复用</li>
+<li>优点</li>
+<li>统一的工作流</li>
+<li>代码复用</li>
+<li>工程管理</li>
+</ul>
+</li>
+</ul>
+<h2>柒、框架和类库</h2>
+<ul>
+<li>
+<p>➕➕➕<a href="https://interview.shanejix.com/#/?id=react-fiber-%e7%9a%84%e4%bd%9c%e7%94%a8%e5%92%8c%e5%8e%9f%e7%90%86-%f0%9f%94%a5%f0%9f%94%a5%f0%9f%94%a5">React Fiber 的作用和原理 🔥🔥🔥</a></p>
+<ul>
+<li>是什么？</li>
+<li>是 React 16 中采用的新协调（reconciliation）引擎，主要目标是支持虚拟 DOM 的渐进式渲染</li>
+<li>对比</li>
+<li>
+<p>Stack Reconciler 替换为 Fiber Reconciler</p>
+<ul>
+<li>任务的分片</li>
+<li>任务划分优先级</li>
+<li>任务可挂起、恢复、终止等操作</li>
+</ul>
+</li>
+<li>Fiber 的主要工作流程：</li>
+<li>ReactDOM.render() 引导 React 启动或调用 setState() 的时候开始创建或更新 Fiber 树。</li>
+<li>
+<p>从根节点开始遍历 Fiber Node Tree， 并且构建 workInProgress Tree（reconciliation 阶段）。</p>
+<ul>
+<li>本阶段可以暂停、终止、和重启，会导致 react 相关生命周期重复执行。</li>
+<li>React 会生成两棵树，一棵是代表当前状态的 current tree，一棵是待更新的 workInProgress tree。</li>
+<li>遍历 current tree，重用或更新 Fiber Node 到 workInProgress tree，workInProgress tree 完成后会替换 current tree。</li>
+<li>每更新一个节点，同时生成该节点对应的 Effect List。</li>
+<li>为每个节点创建更新任务。</li>
+</ul>
+</li>
+<li>
+<p>将创建的更新任务加入任务队列，等待调度。</p>
+<ul>
+<li>调度由 scheduler 模块完成，其核心职责是执行回调。</li>
+<li>scheduler 模块实现了跨平台兼容的 requestIdleCallback。</li>
+<li>每处理完一个 Fiber Node 的更新，可以中断、挂起，或恢复。</li>
+</ul>
+</li>
+<li>
+<p>根据 Effect List 更新 DOM （commit 阶段）。(<a href="https://github.com/facebook/react/pull/19673">已经弃用 effectList</a>）</p>
+<ul>
+<li>React 会遍历 Effect List 将所有变更一次性更新到 DOM 上。</li>
+<li>这一阶段的工作会导致用户可见的变化。因此该过程不可中断，必须一直执行直到更新完成</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="https://interview.shanejix.com/#/?id=hoc-vs-render-props-vs-hooks%f0%9f%94%a5%f0%9f%94%a5%f0%9f%94%a5">HOC vs Render Props vs Hooks🔥🔥🔥</a></li>
+<li>
+<p><a href="https://interview.shanejix.com/#/?id=react-hooks-%e5%ae%9e%e7%8e%b0%e5%8e%9f%e7%90%86-%f0%9f%94%a5%f0%9f%94%a5%f0%9f%94%a5">React Hooks 实现原理 🔥🔥🔥</a></p>
+<ul>
+<li>原理？</li>
+<li>Hooks 主要是利用闭包来保存状态，使用链表保存一系列 Hooks，将链表中的第一个 Hook 与 Fiber 关联。</li>
+<li>在 Fiber 树更新时，就能从 Hooks 中计算出最终输出的状态和执行相关的副作用。</li>
+<li>实现</li>
+</ul>
+</li>
+<li>
+<p>➕➕➕<a href="https://interview.shanejix.com/#/?id=react-%e4%ba%8b%e4%bb%b6%e6%9c%ba%e5%88%b6%e5%8e%9f%e7%90%86-%f0%9f%94%a5%f0%9f%94%a5%f0%9f%94%a5">React 事件机制原理 🔥🔥🔥</a></p>
+<ul>
+<li>原理</li>
+<li>
+<p>两个阶段：</p>
+<ul>
+<li>初始化渲染时在 root 节点上注册原生事件的回调；</li>
+<li>原生事件触发时模拟捕获目标和冒泡阶段派发合成事件</li>
+</ul>
+</li>
+<li>优点</li>
+<li>通过这种机制，冒泡的原生事件类型最多在 root 节点上注册一次，节省内存开销。</li>
+<li>且 React 为不同类型的事件定义了不同的处理优先级，从而让用户代码及时响应高优先级的用户交互，提升用户体验。</li>
+<li>处理</li>
+<li>React 的事件机制中依赖合成事件这个核心概念。</li>
+<li>合成事件在符合 W3C 规范定义的前提下，抹平浏览器之间的差异化表现。</li>
+<li>
+<p>并且简化事件逻辑，对关联事件进行合成。</p>
+<ul>
+<li>如每当表单类型组件的值发生改变时，都会触发 onChange 事件，而 onChange 事件由 change、click、input、keydown、keyup 等原生事件组成。</li>
+</ul>
+</li>
+<li>流程</li>
+<li>原生事件触发后，进入 dispatchEvent 回调方法；</li>
+<li>attemptToDispatchEvent 方法根据该原生事件查找到当前原生 Dom 节点和映射的 Fiber 节点；</li>
+<li>事件和 Fiber 等信息被派发给插件系统进行处理，插件系统调用各插件暴露的 extractEvents 方法；</li>
+<li>accumulateSinglePhaseListeners 方法向上收集 Fiber 树上监听相关事件的其他回调函数，构造合成事件并加入到派发队列 dispatchQueue 中；</li>
+<li>调用 processDispatchQueue 方法，基于捕获或冒泡阶段的标识，按倒序或顺序执行 dispatchQueue 中的方法；</li>
+</ul>
+</li>
+<li><a href="https://interview.shanejix.com/#/?id=%e5%b8%b8%e8%a7%81%e6%a1%86%e6%9e%b6%e7%9a%84-diff-%e7%ae%97%e6%b3%95-%f0%9f%94%a5%f0%9f%94%a5%f0%9f%94%a5">常见框架的 Diff 算法 🔥🔥🔥</a></li>
+<li>
+<p>mvc 和 mvvm 的区别</p>
+<ul>
+<li><a href="https://www.nowcoder.com/tutorial/96/fe3aa17fdbfe4c919975a03f3082bd5d">【前端工程师面试宝典】学习说明<em>互联网校招面试真题面经汇总</em>牛客网 (nowcoder.com)</a></li>
+</ul>
+</li>
+<li>
+<p>单页应用如何在浏览器中实现的？单页应用的优缺点</p>
+<ul>
+<li><a href="https://www.nowcoder.com/tutorial/96/fe3aa17fdbfe4c919975a03f3082bd5d">【前端工程师面试宝典】学习说明<em>互联网校招面试真题面经汇总</em>牛客网 (nowcoder.com)</a></li>
+</ul>
+</li>
+<li>➕➕ 高阶组件</li>
+</ul>
+<h2>捌、React 相关</h2>
+<ul>
+<li>
+<p>➕➕➕01 你真的了解 React 么？</p>
+<ul>
+<li>是什么？（一句话概括）（干嘛的，用途）</li>
+<li>（渐进式）UI 框架</li>
+<li>通过组件化的方式解决 UI 复用的问题</li>
+<li>本质是一个组件化的 UI 框架</li>
+<li>设计思路（特点）</li>
+<li>
+<p>声明式</p>
+<ul>
+<li>声明式的有点在于直观和组合</li>
+</ul>
+</li>
+<li>
+<p>组件化</p>
+<ul>
+<li>组件化的优点在于便于组件的拆分和组合，更容易做到低耦合和高内聚</li>
+</ul>
+</li>
+<li>
+<p>通用性</p>
+<ul>
+<li>通用性的优点在于一次学习，多处使用</li>
+</ul>
+</li>
+<li>优缺点</li>
+<li>
+<p>优点</p>
+<ul>
+<li>适用范围广，web，native 等</li>
+</ul>
+</li>
+<li>
+<p>缺点</p>
+<ul>
+<li>不是大而全的框架，生态需要社区维护</li>
+</ul>
+</li>
+<li>和 vue 的对比！！</li>
+<li>注意引导</li>
+<li>优化</li>
+<li>虚拟 dom</li>
+<li>自己的项目</li>
+<li>工程架构和设计模式等</li>
+</ul>
+</li>
+<li>
+<p>02 为什么要用 jsx？</p>
+<ul>
+<li>（潜台词：为什么不用 a，b，b）</li>
+<li>一句话解释</li>
+<li>JavaScript 的语法扩展，类似于 xml 语法</li>
+<li>核心概念</li>
+<li>不强制使用，React.createElement()的语法糖</li>
+<li>方案对比</li>
+<li>
+<p>模板</p>
+<ul>
+<li>弱关注点分离</li>
+<li>引入了概念多</li>
+</ul>
+</li>
+<li>
+<p>模板字符串</p>
+<ul>
+<li>结构描述复杂</li>
+<li>语法提示差</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>➕➕03 声明周期中的坑？</p>
+<ul>
+<li>(潜台词：为什么会有坑）</li>
+<li>恰当的时机做恰当的事情</li>
+<li>周期梳理（类组件）</li>
+<li>
+<p>挂在阶段</p>
+<ul>
+<li>constructor</li>
+<li>类构造函数初始化 state 和绑定函数</li>
+<li>
+<p>类属性流行后去除了 constructor</p>
+<ul>
+<li>不推荐做初始化以外的逻辑</li>
+<li>不属于 react 的生命周期，只是类构造函数的初始化函数</li>
+<li>更简洁</li>
+</ul>
+</li>
+<li>getDerivedStateFromProps</li>
+<li>在 props 变化时，更新 state</li>
+<li>
+<p>触发时机（并非 props 变化时执行）</p>
+<ul>
+<li>props 传入时</li>
+<li>state 变化时</li>
+<li>foreUpdate 调用时</li>
+</ul>
+</li>
+<li>
+<p>反模式</p>
+<ul>
+<li>复制 props 到 state</li>
+<li>props 变化后修改 state</li>
+</ul>
+</li>
+<li>UNSAGE_componentWilMount</li>
+<li>异步渲染机制下，调用多次</li>
+<li>例如同构场景下，客服端和服务端各执行一次</li>
+<li>render</li>
+<li>执行渲染</li>
+<li>
+<p>纯函数</p>
+<ul>
+<li>不要绑定事件</li>
+<li>不要嗲用 setsate</li>
+</ul>
+</li>
+<li>componentDidMount</li>
+<li>发起网络请求</li>
+</ul>
+</li>
+<li>
+<p>更新阶段</p>
+<ul>
+<li>UNSAFE_componentWillReceiveProps</li>
+<li>被替代</li>
+<li>getDeriveStateFromProps</li>
+<li>同挂在</li>
+<li>shouldComponentUpdate</li>
+<li>是否需要触发新的渲染</li>
+<li>
+<p>渲染触发的最后关卡，性能优化</p>
+<ul>
+<li>PureComponent 的实现</li>
+</ul>
+</li>
+<li>UNSAGE_conponentWillUpdate</li>
+<li>被废弃</li>
+<li>异步更新出现暂停更新的情况</li>
+<li>render</li>
+<li>同挂载</li>
+<li>getSnapshotBeforeUpdate</li>
+<li>配合新的异步渲染机制</li>
+<li>不可使用 setState</li>
+<li>componentDidUpdate</li>
+<li>getSnapshotBeforeUpdate 作为第三个参数使用</li>
+</ul>
+</li>
+<li>
+<p>卸载阶段</p>
+<ul>
+<li>conponentWillUnmount</li>
+<li>解除事件绑定</li>
+<li>取消定时器</li>
+</ul>
+</li>
+<li>职责梳理</li>
+<li>
+<p>重新渲染</p>
+<ul>
+<li>函数组件</li>
+<li>函数组件任何时候都会重新渲染</li>
+<li>React.memo()复用上次的渲染结果</li>
+<li>类组件</li>
+<li>state 变化时</li>
+<li>props 传入时</li>
+<li>PureComponet</li>
+</ul>
+</li>
+<li>
+<p>错误处理</p>
+<ul>
+<li>页面白屏</li>
+<li>componentDidCatch 捕获错位</li>
+<li>错误边界</li>
+</ul>
+</li>
+<li>追问</li>
+<li>请求应该放在那里</li>
+</ul>
+</li>
+<li>
+<p>➕➕➕04 类组件和函数组件的区别？</p>
+<ul>
+<li>共同点</li>
+<li>使用方式一致</li>
+<li>表达效果一致（性能，UI）</li>
+<li>不同点</li>
+<li>
+<p>心智模型</p>
+<ul>
+<li>OOP</li>
+<li>FP</li>
+</ul>
+</li>
+<li>
+<p>使用场景</p>
+<ul>
+<li>生命周期</li>
+<li>设计模式：继承</li>
+</ul>
+</li>
+<li>
+<p>性能优化</p>
+<ul>
+<li>shouldComponentUpdate</li>
+<li>React.memo</li>
+</ul>
+</li>
+<li>
+<p>Hooks</p>
+<ul>
+<li>淡出生命周期，取代类</li>
+<li>组合优于继承</li>
+<li>简单</li>
+<li>易复用</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>➕05 如何设计 React 组件？</p>
+<ul>
+<li>(背景：如何将组件更好的组合 --- 缺乏一种设计模式)</li>
+<li>如何组合</li>
+<li>不同场景吗，组合方式是不一样的</li>
+<li>设计模式（经典分类）</li>
+<li>
+<p>无状态组件（展示组件）：只做展示，通用行强，复用性好</p>
+<ul>
+<li>（均是关注点分离的应用）</li>
+<li>代理组件</li>
+<li>内聚 props ，封装分层</li>
+<li>样式组件</li>
+<li>内聚样式</li>
+<li>布局组件</li>
+<li>内聚布局</li>
+<li>性能优化</li>
+</ul>
+</li>
+<li>
+<p>有状态组件（灵巧组件）：处理业务逻辑和状态（组合组件），注重业务本身</p>
+<ul>
+<li>容器组件</li>
+<li>拉取数据</li>
+<li>组合组件</li>
+<li>（关注点分离）</li>
+<li>高阶组件</li>
+<li>（装饰器写法 - 装饰器模式）</li>
+<li>
+<p>抽取公共逻辑</p>
+<ul>
+<li>登录态校验</li>
+<li>页面埋点</li>
+</ul>
+</li>
+<li>链式调用</li>
+<li>渲染劫持</li>
+<li>
+<p>缺陷</p>
+<ul>
+<li>丢失静态函数</li>
+<li>refs 属性不能透传</li>
+<li>React.forwordRef</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>工程化实践</li>
+<li>目录结构划分</li>
+<li>引入工程管理</li>
+</ul>
+</li>
+<li>
+<p>➕06 setState 是同步更新还是异步更新？</p>
+<ul>
+<li>（不同场景下不同）</li>
+<li>控制点</li>
+<li>非真异步</li>
+<li>
+<p>isBatchUpdate => lanes</p>
+<ul>
+<li>setState 先存入 state 队列</li>
+<li>isBatchUpdte == true 执行异步操作</li>
+<li>isBatchUpate == false 执行同步操作</li>
+</ul>
+</li>
+<li>异步场景</li>
+<li>React 生命周期函数中</li>
+<li>React 合成事件中</li>
+<li>同步场景</li>
+<li>
+<p>原生事件</p>
+<ul>
+<li>addEventListener</li>
+<li>setTimeout</li>
+<li>setInterval</li>
+</ul>
+</li>
+<li>原因</li>
+<li>保持内部一致性，props</li>
+<li>并发更新，提升性能</li>
+</ul>
+</li>
+<li>
+<p>➕➕07 组件间如何通信？</p>
+<ul>
+<li>（组件树的层级关系，一层，多层）</li>
+<li>一层</li>
+<li>
+<p>父与子</p>
+<ul>
+<li>props 透传（经典设计）</li>
+<li>场景</li>
+<li>初始化默认值</li>
+<li>无状态组件（展示组件）</li>
+</ul>
+</li>
+<li>
+<p>子与父</p>
+<ul>
+<li>回调函数</li>
+<li>场景</li>
+<li>函数作为值传递给子组件</li>
+<li>
+<p>renderProps()：react-router v5</p>
+<ul>
+<li>父组件专注于渲染结果</li>
+<li>子组件专注于渲染逻辑</li>
+</ul>
+</li>
+<li>实例函数</li>
+<li>场景</li>
+<li>React Ref 获取子组件的实例</li>
+</ul>
+</li>
+<li>
+<p>兄弟组件</p>
+<ul>
+<li>共同的父节点进行中转</li>
+<li>场景</li>
+<li>容器组件中协调各组件</li>
+</ul>
+</li>
+<li>多层</li>
+<li>嵌套层次太深，无直接联系</li>
+<li>
+<p>方案</p>
+<ul>
+<li>context</li>
+<li>
+<p>场景</p>
+<ul>
+<li>国际化</li>
+</ul>
+</li>
+<li>全局变量</li>
+<li>临时存储值</li>
+<li>全局事件</li>
+<li>document 的自定义事件，放在 componetDidMount 中</li>
+<li>时序依赖</li>
+<li>状态管理框架</li>
+<li>成本高</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>➕➕08 列举 React 状态管理库？</p>
+<ul>
+<li>（背景：横跨多个层级共享状态）</li>
+<li>（context 的缺点：难以追溯数据源，提升耦合度，难以复用和测试）</li>
+<li>flux</li>
+<li>
+<p>单向数据流动<img src="https://cdn.nlark.com/yuque/0/2022/png/377147/1649744054594-89def2f5-7c1c-4710-b986-6e3ba955eed3.png#clientId=ubfed43c7-cbb4-4&#x26;crop=0&#x26;crop=0&#x26;crop=1&#x26;crop=1&#x26;from=paste&#x26;id=uaf97b044&#x26;margin=%5Bobject%20Object%5D&#x26;name=image.png&#x26;originHeight=616&#x26;originWidth=1244&#x26;originalType=url&#x26;ratio=1&#x26;rotation=0&#x26;showTitle=false&#x26;size=65921&#x26;status=done&#x26;style=none&#x26;taskId=ub1ea1c01-d066-4665-9abd-0be420211d7&#x26;title=#crop=0&#x26;crop=0&#x26;crop=1&#x26;crop=1&#x26;id=BBTSi&#x26;originHeight=616&#x26;originWidth=1244&#x26;originalType=binary&#x26;ratio=1&#x26;rotation=0&#x26;showTitle=false&#x26;status=done&#x26;style=none&#x26;title=" alt="image.png"></p>
+<ul>
+<li>view 视图层：react 组件</li>
+<li>store 数据层：维护数据，和数据处理逻辑</li>
+<li>dispatcher 管理数据流动的中央枢纽</li>
+<li>action：事件通知通过 type 标记</li>
+</ul>
+</li>
+<li>
+<p>优点</p>
+<ul>
+<li>解决 MVC 中数据流不清晰的问题，分工明确</li>
+<li>大型项目容易管理和维护</li>
+</ul>
+</li>
+<li>redux</li>
+<li>
+<p>三大原则（深受函数式编程的影响）</p>
+<ul>
+<li>单一数据源：应用的数据源存储在一颗 object tree 中，并且只存在唯一一个 store</li>
+<li>纯函数 reducer：描述 action 如何改变状态树</li>
+<li>state 只读：改变 state 的唯一办法就是触发 action</li>
+</ul>
+</li>
+<li>
+<p>导致</p>
+<ul>
+<li>所有事件都收拢 action 去触发</li>
+<li>所有 UI 状态都交给 store 去管理</li>
+<li>所有的业务逻辑都交给 reducer 去处理</li>
+</ul>
+</li>
+<li>三大原则实现了时间回溯功能（）</li>
+<li>
+<p>副作用</p>
+<ul>
+<li>action ，refucer 都是纯函数，store 只是一个 state 状态树，都不能完成副作用的操作</li>
+<li>方案</li>
+<li>
+<p>在 dispatch 的时候添加中间件，拦截分发的 action 添加额外的复杂行为（副作用等）</p>
+<ul>
+<li>redux-thunk</li>
+<li>redux-sage</li>
+<li>redux-promise</li>
+</ul>
+</li>
+<li>
+<p>在 reducer 中直接处理副作用</p>
+<ul>
+<li>redux-loop</li>
+</ul>
+</li>
+<li>
+<p>大而全的方案</p>
+<ul>
+<li>rematch</li>
+<li>dva</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>优点</p>
+<ul>
+<li>可预测，易测试</li>
+<li>代码结构严谨，易维护</li>
+<li>生态丰富</li>
+</ul>
+</li>
+<li>mobx</li>
+<li>监听数据属性的变化，直接在数据上更改来触发 UI 渲染</li>
+<li>mobx5 实现监听的方式采用 Object.defineProperty</li>
+<li>mobx5 之后采用 Proxy</li>
+<li>追问</li>
+<li>实现 redux</li>
+<li>实现 redux-thunk</li>
+</ul>
+</li>
+<li>
+<p>09 Virtual DOM 的工作原理是什么？</p>
+<ul>
+<li>是什么？（干嘛的，用途）</li>
+<li>虚拟 dom 是对真实 dom 的高度抽象</li>
+<li>设计初期为避免大量的 DOM 操作和降低代码整体的风险而引入</li>
+<li>设计思路（实现）</li>
+<li>render 函数中的 jsx 会被编译为 React.createElement</li>
+<li>React.createElement 返回一个 Plain Object 包含 type tage props chrend 等属性</li>
+<li>Plain Objec 通过属性结构构成一颗虚拟 dom</li>
+<li>当状态变化时，将前后虚拟 dom 进行对比（diff 算法），生成的结果为 patch</li>
+<li>渲染 path 完成对真实 dom 的操作</li>
+<li>优缺点</li>
+<li>
+<p>优点</p>
+<ul>
+<li>改善大规模 DOM 操作的性能</li>
+<li>规避 xss 风险</li>
+<li>低成本跨平台开发</li>
+</ul>
+</li>
+<li>
+<p>缺点</p>
+<ul>
+<li>内存占有高</li>
+<li>高性能场景难以优化（google earth）</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>10 React diff 算法有何不同？</p>
+<ul>
+<li>是什么？（干嘛的，用途）</li>
+<li>通过对比新旧两颗虚拟 DOM 的变更差异，将更新补丁作用于真实 dom；</li>
+<li>以最小成本更新视图</li>
+<li>过程：触发更新 =》生成补丁 =》 应用补丁</li>
+<li>设计思路（实现）</li>
+<li>
+<p>更新时机</p>
+<ul>
+<li>state 变化</li>
+</ul>
+</li>
+<li>遍历算法（深度优先）</li>
+<li>
+<p>优化策略（分治）</p>
+<ul>
+<li>树对比</li>
+<li>只对同层对比</li>
+<li>组件对比</li>
+<li>同一类型则进行树对比，不是则直接放入补丁中</li>
+<li>元素对比</li>
+<li>同层级元素，通过 key 标记操作生成补丁</li>
+</ul>
+</li>
+<li>
+<p>fiber 架构</p>
+<ul>
+<li>节点和树采用了 fiberNode 和 fiberTree 重构</li>
+<li>fiberNode 使用了双链表</li>
+<li>跟新过程由 current 和 workProgress 两颗树完成双缓存</li>
+</ul>
+</li>
+<li>
+<p>对比</p>
+<ul>
+<li>preact</li>
+<li>整体设计相似</li>
+<li>没有 fiber</li>
+<li>底层采用真实 dom 对比</li>
+<li>vue</li>
+<li>整体设计相似</li>
+<li>没有 fiber</li>
+</ul>
+</li>
+<li>优缺点</li>
+<li>可中断更新</li>
+<li>时间切片</li>
+<li>追问：根据 diff 如何优化代码</li>
+<li>避免跨层级节点移动</li>
+<li>尽量减少组件层级深度</li>
+<li>设置唯一 key 优化</li>
+<li>设置 shouldComponentUpdate 或者 React.PureComponet 减少 diff 次数</li>
+</ul>
+</li>
+<li>
+<p>➕➕➕11 如何解释 React 的渲染流程？</p>
+<ul>
+<li>（渲染过程大致相同，但协调不同，以 v16 为界 分为 stack reconciler 和 fiber reconciler）</li>
+<li>15.x</li>
+<li>
+<p>核心：</p>
+<ul>
+<li>stack reconciler 调度方式</li>
+</ul>
+</li>
+<li>
+<p>调度</p>
+<ul>
+<li>递归</li>
+</ul>
+</li>
+<li>
+<p>阶段</p>
+<ul>
+<li>挂载</li>
+<li>ReactMount 模块完成</li>
+<li>更新</li>
+<li>ReactUpdate 模块完成</li>
+<li>卸载</li>
+</ul>
+</li>
+<li>
+<p>事务（基本处理单位）</p>
+<ul>
+<li>优点</li>
+<li>原子性（不可再分）</li>
+<li>隔离性</li>
+<li>一致性</li>
+<li>作用</li>
+<li>链接 react 和虚拟 dom 处理挂载、更新、和卸载等逻辑</li>
+</ul>
+</li>
+<li>16.x</li>
+<li>
+<p>核心：</p>
+<ul>
+<li>fiber reconciler 调度方式</li>
+</ul>
+</li>
+<li>
+<p>调度</p>
+<ul>
+<li>协作式多任务模式</li>
+<li>requestIdleCallback</li>
+<li>优先级策略</li>
+<li>标记 tag</li>
+</ul>
+</li>
+<li>
+<p>阶段</p>
+<ul>
+<li>render</li>
+<li>
+<p>fiber</p>
+<ul>
+<li>基于 React Element 的二次封装</li>
+<li>提供父子兄节点的引用=》双向链表</li>
+</ul>
+</li>
+<li>可终端，可停止，无副作用</li>
+<li>
+<p>work</p>
+<ul>
+<li>requestIdleCallback</li>
+<li>优先级</li>
+<li>workInProgress</li>
+</ul>
+</li>
+<li>双缓存树</li>
+<li>commit</li>
+<li>更新 dom 执行副作用</li>
+<li>同步更新（不可中断）</li>
+</ul>
+</li>
+<li>
+<p>优势</p>
+<ul>
+<li>提高 react 在动画画布以及手势下的性能表现</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>12 React 渲染异常会造成什么样的结果？</p>
+<ul>
+<li>是什么？</li>
+<li>
+<p>现象</p>
+<ul>
+<li>页面白屏</li>
+</ul>
+</li>
+<li>
+<p>原理</p>
+<ul>
+<li>渲染层，空安全</li>
+</ul>
+</li>
+<li>怎么解决</li>
+<li>
+<p>工程化：</p>
+<ul>
+<li>通用方案</li>
+<li>
+<p>预防</p>
+<ul>
+<li>引入外部函数</li>
+<li>idx</li>
+<li>lodash.get</li>
+<li>bable 插件</li>
+<li>可选链操作符</li>
+<li>使用 typescript</li>
+<li>3.7 以上使用可选链操作符</li>
+</ul>
+</li>
+<li>
+<p>兜底</p>
+<ul>
+<li>高阶函数</li>
+<li>npm 包</li>
+</ul>
+</li>
+<li>量化结果</li>
+<li>
+<p>覆盖率</p>
+<ul>
+<li>团队项目 100%</li>
+</ul>
+</li>
+<li>统计数</li>
+<li>线上报警</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>➕13 如何分析和调优性能瓶颈？</p>
+<ul>
+<li>建立衡量指标</li>
+<li>
+<p>指标</p>
+<ul>
+<li>FCP</li>
+<li>TTI</li>
+<li>Page Load</li>
+<li>FPS</li>
+<li>静态资源及 API 请求成功率</li>
+</ul>
+</li>
+<li>
+<p>采集</p>
+<ul>
+<li>lightihouse</li>
+</ul>
+</li>
+<li>确认优化原因</li>
+<li>
+<p>业务场景划分</p>
+<ul>
+<li>2C</li>
+<li>管理后台</li>
+<li>，，，</li>
+</ul>
+</li>
+<li>
+<p>以用户比例划分</p>
+<ul>
+<li>tp50</li>
+<li>tp99</li>
+</ul>
+</li>
+<li>实施方案过程</li>
+<li>Loading 图标</li>
+<li>骨架屏</li>
+<li>异步加载</li>
+<li>懒加载</li>
+<li>CDN</li>
+<li>Https</li>
+<li>
+<p>React</p>
+<ul>
+<li>长列表</li>
+<li>重渲染</li>
+</ul>
+</li>
+<li>计算效果收益</li>
+<li>
+<p>数据</p>
+<ul>
+<li>技术服务于业务</li>
+<li>业务指标指导优化</li>
+</ul>
+</li>
+<li>
+<p>效果</p>
+<ul>
+<li>tp50</li>
+<li>tp99</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>➕14 如何避免重复渲染？</p>
+<ul>
+<li>优化时机</li>
+<li>业务标准</li>
+<li>数据支撑</li>
+<li>定位方式</li>
+<li>复现</li>
+<li>
+<p>工具</p>
+<ul>
+<li>Preformance</li>
+<li>React Profiler</li>
+</ul>
+</li>
+<li>常见的坑</li>
+<li>
+<p>参数动态变化，使 PureComponent 和 Reat.memo 破防</p>
+<ul>
+<li>jsx 属性使用箭头函数</li>
+<li>每次都产生新的对象</li>
+</ul>
+</li>
+<li>处理方案</li>
+<li>
+<p>缓存</p>
+<ul>
+<li>reselect 避免产生新的对象</li>
+</ul>
+</li>
+<li>
+<p>不可变数据</p>
+<ul>
+<li>ImmutableJS</li>
+<li>immerjs</li>
+</ul>
+</li>
+<li>
+<p>手动控制</p>
+<ul>
+<li>shuldComponetUpdate</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>15 如何提升 React 代码的可维护性？</p>
+<ul>
+<li>（潜台词，项目的可维护性）</li>
+<li>角度</li>
+<li>软件工程（工程化）</li>
+<li>维度</li>
+<li>
+<p>可分析性</p>
+<ul>
+<li>目标</li>
+<li>快速定位线上问题</li>
+<li>预防</li>
+<li>人工 code review</li>
+<li>lint 工具校验</li>
+<li>兜底</li>
+<li>souremap 定位</li>
+</ul>
+</li>
+<li>
+<p>可改变性</p>
+<ul>
+<li>目标</li>
+<li>易于扩展，易于迭代</li>
+<li>设计模式</li>
+<li>组件的设计模式</li>
+<li>架构设计</li>
+<li>状态管理框架</li>
+</ul>
+</li>
+<li>
+<p>稳定性</p>
+<ul>
+<li>目标</li>
+<li>避免修改代码引起线上不必要问题</li>
+<li>措施</li>
+<li>核心业务单元测试</li>
+</ul>
+</li>
+<li>
+<p>易测试性</p>
+<ul>
+<li>目标</li>
+<li>易于发现代码潜在的问题</li>
+<li>架构划分</li>
+<li>纯函数</li>
+</ul>
+</li>
+<li>
+<p>可维护性</p>
+<ul>
+<li>遵守约定，提升代码的可读性</li>
+<li>减少人为因素，加强工具干涉</li>
+<li>eslint</li>
+<li>stylelint</li>
+<li>commitlint</li>
+<li>editorconfig</li>
+<li>prettier</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>➕➕16 React Hooks 使用限制有哪些？</p>
+<ul>
+<li>是什么？</li>
+<li>
+<p>列举限制</p>
+<ul>
+<li>不要再循环，条件，嵌套函数中调用 Hook</li>
+<li>在 React 函数组件中使用 Hook</li>
+</ul>
+</li>
+<li>为什么？</li>
+<li>
+<p>设计初衷</p>
+<ul>
+<li>改进 React 组件开发模式</li>
+</ul>
+</li>
+<li>
+<p>问题领域</p>
+<ul>
+<li>组件难以复用状态逻辑</li>
+<li>（常见解决方案）</li>
+<li>高阶函数</li>
+<li>render props</li>
+<li>状态管理框架</li>
+<li>复杂的组件难以理解</li>
+<li>生命周期函数与业务逻辑耦合，导致组件关联部分难以差分</li>
+<li>人和机器都容易混淆类</li>
+<li>
+<p>this 问题</p>
+<ul>
+<li>值捕获问题</li>
+<li>类属性草案</li>
+</ul>
+</li>
+<li>编译优化</li>
+</ul>
+</li>
+<li>
+<p>方案原理</p>
+<ul>
+<li>not magic just array</li>
+</ul>
+</li>
+<li>怎么做？</li>
+<li>
+<p>如何规避</p>
+<ul>
+<li>Eslint</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>➕17 useEffect 和 useLayoutEffect 的区别在那里？</p>
+<ul>
+<li>共同点</li>
+<li>
+<p>使用方式</p>
+<ul>
+<li>函数签名一致</li>
+<li>底层都是调用 mountEffectImpl</li>
+</ul>
+</li>
+<li>
+<p>运用效果</p>
+<ul>
+<li>处理副作用</li>
+</ul>
+</li>
+<li>不同点</li>
+<li>
+<p>使用场景</p>
+<ul>
+<li>Effect：绝大多数场景</li>
+<li>LayoutEffect：处理 dom 操作，调整样式，避免页面闪烁</li>
+</ul>
+</li>
+<li>
+<p>独有能力</p>
+<ul>
+<li>Effect：异步处理副作用</li>
+<li>LayoutEffect：同步处理副作用</li>
+</ul>
+</li>
+<li>
+<p>设计原理</p>
+<ul>
+<li>Effect：异步调用</li>
+<li>LayoutEffect： 同步调用</li>
+</ul>
+</li>
+<li>
+<p>未来趋势</p>
+<ul>
+<li>暂无变化</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>➕➕➕18 谈谈 React Hooks 的设计模式？</p>
+<ul>
+<li>认知基础</li>
+<li>抛弃生命周期，向 effects 思考</li>
+<li>实践心得（规范推广）</li>
+<li>
+<p>React.memo 被 React.useMemo 替代</p>
+<ul>
+<li>React.memo 不能控制组件内部共享状态的变化</li>
+</ul>
+</li>
+<li>
+<p>常量 和 函数声明</p>
+<ul>
+<li>函数组件中每次渲染都会重新声明常量和创建函数（无意义的操作）</li>
+<li>useCallback</li>
+</ul>
+</li>
+<li>
+<p>useEffect 的第二个参数</p>
+<ul>
+<li>不要使用引用类型的数据，推荐使用值类型的数据</li>
+<li>JSON.stringify</li>
+</ul>
+</li>
+<li>外观模式</li>
+<li>
+<p>将业务逻辑封装到各自自定义的 hook 中</p>
+<ul>
+<li>入用户信息操作：获取用户，增加用户，删除用户等</li>
+</ul>
+</li>
+<li>组件内部是抽空的，不放具体的业务逻辑，只去带有 hook 暴露的接口</li>
+<li>有利于测试关键路劲下的业务逻辑</li>
+</ul>
+</li>
+<li>
+<p>19 React Router 的实现原理和工作方式是什么？</p>
+<ul>
+<li>实现原理</li>
+<li>
+<p>外部：基础原理</p>
+<ul>
+<li>Hash</li>
+<li>Path</li>
+<li>
+<p>html5 histroy api</p>
+<ul>
+<li>pushState</li>
+<li>replaceState</li>
+</ul>
+</li>
+<li>historyApiCallback</li>
+</ul>
+</li>
+<li>
+<p>内部：实践方案</p>
+<ul>
+<li>history 库</li>
+<li>跨平台兼容</li>
+<li>
+<p>内存路由</p>
+<ul>
+<li>react-router-native</li>
+</ul>
+</li>
+<li>
+<p>浏览器路由</p>
+<ul>
+<li>react-router-dom</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>工作方式</li>
+<li>
+<p>整体：设计模式</p>
+<ul>
+<li>Monorepo</li>
+<li>Context</li>
+</ul>
+</li>
+<li>
+<p>局部：关键模块</p>
+<ul>
+<li>Context 容器</li>
+<li>Router</li>
+<li>MemoryRouter</li>
+<li>直接消费者，匹配路由</li>
+<li>Route</li>
+<li>Redirect</li>
+<li>Switch</li>
+<li>。。。</li>
+<li>与平台关联的功能组件</li>
+<li>Link</li>
+<li>NavLink</li>
+<li>DeepLinking</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>20 React 中常用库有哪些？</p>
+<ul>
+<li>（从开发流程切入）</li>
+<li>初始化</li>
+<li>
+<p>create-react-app</p>
+<ul>
+<li>创建工程</li>
+<li>react-app-rewired 配置</li>
+</ul>
+</li>
+<li>vite</li>
+<li>
+<p>dva</p>
+<ul>
+<li>一站式方案</li>
+</ul>
+</li>
+<li>
+<p>umi</p>
+<ul>
+<li>一站式方案</li>
+</ul>
+</li>
+<li>
+<p>create-react-libray</p>
+<ul>
+<li>创建库</li>
+</ul>
+</li>
+<li>
+<p>storybook</p>
+<ul>
+<li>维护大规模组件</li>
+</ul>
+</li>
+<li>开发</li>
+<li>
+<p>路由</p>
+<ul>
+<li>react-router</li>
+</ul>
+</li>
+<li>
+<p>样式</p>
+<ul>
+<li>css module</li>
+<li>css-loader</li>
+<li>css-in-js</li>
+<li>emotion</li>
+<li>styled-component</li>
+</ul>
+</li>
+<li>
+<p>组件库</p>
+<ul>
+<li>antd</li>
+</ul>
+</li>
+<li>
+<p>功能组件</p>
+<ul>
+<li>拖拽</li>
+<li>reacnt-dnd</li>
+<li>react-draggable</li>
+<li>预览 pdf</li>
+<li>react-pdf-view</li>
+<li>视频播放</li>
+<li>video-react</li>
+<li>长列表</li>
+<li>react-window</li>
+<li>react-virtualized</li>
+</ul>
+</li>
+<li>
+<p>状态管理</p>
+<ul>
+<li>redux</li>
+<li>mobx</li>
+</ul>
+</li>
+<li>构建</li>
+<li>webpack</li>
+<li>rullup</li>
+<li>esbuild</li>
+<li>检查</li>
+<li>
+<p>代码规范检查</p>
+<ul>
+<li>eslint</li>
+</ul>
+</li>
+<li>
+<p>测试</p>
+<ul>
+<li>jest</li>
+<li>enzme</li>
+<li>react-testing-library</li>
+<li>react-hooks-testing-library</li>
+</ul>
+</li>
+<li>发布</li>
+<li>s3-pluging-webpack</li>
+</ul>
+</li>
+<li>➕ 21 useEffect / useMemo 的区别？</li>
+</ul>
+<h2>玖、综合场景</h2>
+<ul>
+<li>
+<p><a href="https://interview.shanejix.com/#/?id=%e5%a4%9a%e5%9b%be%e7%ab%99%e7%82%b9%e6%80%a7%e8%83%bd%e4%bc%98%e5%8c%96-%f0%9f%94%a5%f0%9f%94%a5%f0%9f%94%a5">多图站点性能优化 🔥🔥🔥</a></p>
+<ul>
+<li>图片优化</li>
+<li>合适的图片格式</li>
+<li>压缩和缩放图片</li>
+<li>网络传输优化</li>
+<li>
+<p>开启 http/2</p>
+<ul>
+<li>使用精灵图 / 雪碧图，减少 HTTP 请求数。</li>
+<li>10kb 大小以内的图片资源使用 base64 编码，减少 HTTP 请求数。</li>
+<li>通过使用多个域名，开启多个 TCP 连接，突破浏览器同源最大并发连接数的限制。</li>
+</ul>
+</li>
+<li>使用 cdn</li>
+<li><a href="https://interview.shanejix.com/#/?id=%e5%9b%be%e7%89%87%e5%8a%a0%e8%bd%bd%e7%ad%96%e7%95%a5%e4%bc%98%e5%8c%96">图片加载策略优化</a></li>
+<li>
+<p>懒加载</p>
+<ul>
+<li>懒加载的策略是推迟加载离屏图片资源，从而减少资源请求数。实现懒加载的主流方案有：</li>
+<li>使用 img 标签的 loading 属性。</li>
+<li>使用 Intersection Observer API。</li>
+<li>使用 scroll、resize 和 orientationchange 事件</li>
+</ul>
+</li>
+<li>预加载</li>
+</ul>
+</li>
+<li>
+<p>➕➕<a href="https://interview.shanejix.com/#/?id=%e5%a6%82%e4%bd%95%e5%87%8f%e5%b0%91%e7%99%bd%e5%b1%8f%e7%9a%84%e6%97%b6%e9%97%b4-%f0%9f%94%a5%f0%9f%94%a5%f0%9f%94%a5">如何减少白屏的时间 🔥🔥🔥</a></p>
+<ul>
+<li>分析页面打开过程以及可优化的方向：</li>
+<li>
+<p>前置条件</p>
+<ul>
+<li>性能监控指标</li>
+</ul>
+</li>
+<li>
+<p>DNS 解析</p>
+<ul>
+<li>预解析</li>
+<li>域名收敛</li>
+</ul>
+</li>
+<li>
+<p>TCP 连接</p>
+<ul>
+<li>预连接</li>
+</ul>
+</li>
+<li>
+<p>请求优化</p>
+<ul>
+<li>HTTP/2</li>
+</ul>
+</li>
+<li>
+<p>页面解析优化</p>
+<ul>
+<li>服务端渲染</li>
+<li>预渲染</li>
+</ul>
+</li>
+<li>
+<p>资源加载和页面渲染</p>
+<ul>
+<li>骨架屏</li>
+<li>静态资源优化</li>
+<li>
+<p>减小资源大小</p>
+<ul>
+<li>Gzip 压缩文件</li>
+<li>JS 文件拆分，动态加载</li>
+</ul>
+</li>
+<li>
+<p>加快资源加载速度</p>
+<ul>
+<li>CDN（Content Delivery Network）</li>
+<li>HTTP/2</li>
+</ul>
+</li>
+<li>资源预加载</li>
+<li>prefetch</li>
+<li>preload</li>
+<li>quicklink</li>
+</ul>
+</li>
+<li>
+<p>接口请求优化</p>
+<ul>
+<li>接口合并</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p><a href="https://interview.shanejix.com/#/?id=%e5%a6%82%e4%bd%95%e5%88%a4%e6%96%ad%e4%b8%80%e4%b8%aa%e5%85%83%e7%b4%a0%e6%98%af%e5%90%a6%e5%9c%a8%e5%8f%af%e8%a7%86%e5%8c%ba%e5%9f%9f%e4%b8%ad%ef%bc%9f%f0%9f%94%a5%f0%9f%94%a5">如何判断一个元素是否在可视区域中？🔥🔥</a></p>
+<ul>
+<li><a href="https://interview.shanejix.com/#/?id=offsettop%e3%80%81scrolltop">offsetTop、scrollTop</a></li>
+<li><a href="https://interview.shanejix.com/#/?id=getboundingclientrect">getBoundingClientRect</a></li>
+<li><a href="https://interview.shanejix.com/#/?id=intersection-observer">Intersection Observer</a></li>
+</ul>
+</li>
+<li><a href="https://interview.shanejix.com/#/?id=%e5%a4%a7%e6%96%87%e4%bb%b6%e4%b8%8a%e4%bc%a0%e5%a6%82%e4%bd%95%e5%81%9a%e6%96%ad%e7%82%b9%e7%bb%ad%e4%bc%a0%ef%bc%9f%f0%9f%94%a5">大文件上传如何做断点续传？🔥</a></li>
+<li>
+<p>➕ 注册功能前端到后端数据库这一套流程 🔥🔥🔥</p>
+<ul>
+<li><a href="https://www.nowcoder.com/tutorial/96/4d6a2fe5345c46458d6727ef78b0f687">【前端工程师面试宝典】学习说明<em>互联网校招面试真题面经汇总</em>牛客网 (nowcoder.com)</a></li>
+</ul>
+</li>
+<li>
+<p>➕npm 包发版</p>
+<ul>
+<li>major.minor.patch</li>
+<li>^：匹配最近的 minor</li>
+<li>~：匹配最近的 patch</li>
+<li>*：最新的版本</li>
+</ul>
+</li>
+<li>➕ 长列表渲染</li>
+<li>➕➕➕ 组件库的设计全量导入和按需引入的实现</li>
+<li>➕ 轮播的实现</li>
+</ul>
+<h2>拾、数据结构和算法</h2>
+<ul>
+<li>
+<p>➕➕➕ 手撕 code</p>
+<ul>
+<li><a href="https://interview.shanejix.com/#/?id=%e5%b0%be%e9%80%92%e5%bd%92-%f0%9f%94%a5%f0%9f%94%a5">尾递归 🔥🔥</a></li>
+<li><a href="https://interview.shanejix.com/#/?id=%e5%87%bd%e6%95%b0%e7%bc%93%e5%ad%98-%f0%9f%94%a5%f0%9f%94%a5">函数缓存 🔥🔥</a></li>
+<li><a href="https://interview.shanejix.com/#/?id=%e4%b8%8a%e6%8b%89%e5%8a%a0%e8%bd%bd-%f0%9f%94%a5">上拉加载 🔥</a></li>
+<li>高频手撕</li>
+<li><a href="https://www.shanejix.com/posts/%E6%89%8B%E6%92%95%20JavaScript%20%E9%AB%98%E9%A2%91%E7%9F%A5%E8%AF%86%E7%82%B9%EF%BC%8C%E5%BD%BB%E5%BA%95%E5%BE%81%E6%9C%8D%E9%9D%A2%E8%AF%95%E5%AE%98/">https://www.shanejix.com/posts/%E6%89%8B%E6%92%95%20JavaScript%20%E9%AB%98%E9%A2%91%E7%9F%A5%E8%AF%86%E7%82%B9%EF%BC%8C%E5%BD%BB%E5%BA%95%E5%BE%81%E6%9C%8D%E9%9D%A2%E8%AF%95%E5%AE%98/</a></li>
+</ul>
+</li>
+<li>
+<p>➕leetcode</p>
+<ul>
+<li>top100</li>
+<li>分类刷题</li>
+<li>目标公司突击</li>
+<li><a href="https://github.com/shanejix/algorithm-and-data-structure">shanejix/algorithm-and-data-structure: Self-learning data structure and algorithm (github.com)</a></li>
+</ul>
+</li>
+</ul>
+<h2>佰、设计模式</h2>
+<ul>
+<li>
+<p>➕➕ 为什么要用工厂方法？</p>
+<ul>
+<li>解耦（关注点分离）</li>
+<li>不关心如何实例化对象</li>
+<li>只关心如何使用</li>
+<li>封装</li>
+<li>不知道具体内部实例细节</li>
+</ul>
+</li>
+<li>➕ 发布订阅</li>
+<li>单例模式</li>
+<li>➕➕➕ 装饰器模式</li>
+<li>代理模式</li>
+</ul>
+<h2>仟、技术之外</h2>
+<ul>
+<li>➕➕➕ 职业规划</li>
+<li>➕ 怎么评价你</li>
+</ul>
+<blockquote>
+<p>作者：<a href="https://www.shanejix.com/">shanejix</a>
+出处：<a href="https://www.shanejix.com/posts/2022%E9%87%91%E4%B8%89%E9%93%B6%E5%9B%9B%E5%89%8D%E7%AB%AF%E9%9D%A2%E8%AF%95%E7%AC%94%E8%AE%B0/">https://www.shanejix.com/posts/2022 金三银四前端面试笔记/</a>
+版权：本作品采用<a href="http://creativecommons.org/licenses/by-nc-nd/4.0/">「署名-非商业性使用-相同方式共享 4.0 国际」</a>许可协议进行许可。
+声明：转载请注明出处！</p>
+</blockquote></section><section style="margin-top:4.375rem"><p><a href="https://github.com/shanejix/shanejix.github.io/issues/95" target="_blank" rel="noopener noreferrer">Edit on GitHub</a> • <a href="https://github.com/shanejix/shanejix.github.io/issues/95" target="_blank" rel="noopener noreferrer">Discuss on GitHub</a></p></section></article><hr style="margin-bottom:1.75rem"/><div style="display:flex;margin-bottom:3.5rem"><img src="/static/bio-0d7082db0bcaf1381f0ae2cbdc939311.png" alt="Shane Jix" style="margin-right:0.875rem;margin-bottom:0;width:3.5rem;height:3.5rem;border-radius:50%"/><p style="max-width:310px">Personal blog by <a href="https://github.com/shanejix">Shane Jix</a>. I explain with words and code.</p></div><nav style="padding-bottom:2rem"><div style="display:flex;flex-wrap:wrap;justify-content:space-between;padding:0;margin-left:0"><div><a rel="next" href="/posts/搭建 React 17 源码本地调试环境/">← <!-- -->搭建 React 17 源码本地调试环境</a></div><div><a rel="prev" href="/posts/[Snippet] - EventEmitter/">[Snippet] - EventEmitter<!-- -->→</a></div></div></nav></main><style data-emotion-css="v9ddz0">.css-v9ddz0{min-height:10vh;max-height:10vh;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-pack:end;-webkit-justify-content:flex-end;-ms-flex-pack:end;justify-content:flex-end;-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;-webkit-flex-direction:column;-ms-flex-direction:column;flex-direction:column;}</style><footer class="css-v9ddz0"><style data-emotion-css="s70iz6">.css-s70iz6{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-pack:center;-webkit-justify-content:center;-ms-flex-pack:center;justify-content:center;-webkit-flex-wrap:wrap;-ms-flex-wrap:wrap;flex-wrap:wrap;-webkit-align-items:flex-start;-webkit-box-align:flex-start;-ms-flex-align:flex-start;align-items:flex-start;}</style><div class="css-s70iz6"><style data-emotion-css="180pfyr">.css-180pfyr{display:inline-block;margin-right:1rem;}</style><span class="css-180pfyr"><a href="/links">Links</a></span><span class="css-180pfyr"><a href="/tools">Tools</a></span></div><style data-emotion-css="1yltmzw">.css-1yltmzw{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-pack:center;-webkit-justify-content:center;-ms-flex-pack:center;justify-content:center;-webkit-align-items:flex-start;-webkit-box-align:flex-start;-ms-flex-align:flex-start;align-items:flex-start;padding-bottom:10px;}</style><div class="css-1yltmzw">© 2019 - <!-- -->2022<!-- -->, Built with<span style="padding:0 4px"><a href="https://www.gatsbyjs.org">Gatsby</a></span></div></footer></div></div><div id="gatsby-announcer" style="position:absolute;top:0;width:1px;height:1px;padding:0;overflow:hidden;clip:rect(0, 0, 0, 0);white-space:nowrap;border:0" aria-live="assertive" aria-atomic="true"></div></div><script>
+  
+  function gaOptout(){document.cookie=disableStr+'=true; expires=Thu, 31 Dec 2099 23:59:59 UTC;path=/',window[disableStr]=!0}var gaProperty='UA-220985232-1',disableStr='ga-disable-'+gaProperty;document.cookie.indexOf(disableStr+'=true')>-1&&(window[disableStr]=!0);
+  if(true) {
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+  }
+  if (typeof ga === "function") {
+    ga('create', 'UA-220985232-1', 'auto', {});
+      ga('set', 'anonymizeIp', true);
+      
+      
+      
+      
+      }</script><script async="" src="https://www.googletagmanager.com/gtag/js?id=G-X8ZKVHVCJT"></script><script>
+      
+      function gaOptout(){document.cookie=disableStr+'=true; expires=Thu, 31 Dec 2099 23:59:59 UTC;path=/',window[disableStr]=!0}var gaProperty='G-X8ZKVHVCJT',disableStr='ga-disable-'+gaProperty;document.cookie.indexOf(disableStr+'=true')>-1&&(window[disableStr]=!0);
+      if(!(navigator.doNotTrack == "1" || window.doNotTrack == "1")) {
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){window.dataLayer && window.dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-X8ZKVHVCJT', {"anonymize_ip":true,"cookie_expires":0,"send_page_view":false});
+      }
+      </script><script id="gatsby-script-loader">/*<![CDATA[*/window.pagePath="/posts/2022金三银四前端面试笔记/";/*]]>*/</script><script id="gatsby-chunk-mapping">/*<![CDATA[*/window.___chunkMapping={"polyfill":["/polyfill-e795261d8342deefff90.js"],"app":["/app-5c7248fcb69374f91873.js"],"component---cache-caches-gatsby-plugin-offline-app-shell-js":["/component---cache-caches-gatsby-plugin-offline-app-shell-js-ad6431e4664bcf916d19.js"],"component---src-pages-404-js":["/component---src-pages-404-js-f46c2501822c6849dd3b.js"],"component---src-pages-about-backup-js":["/component---src-pages-about-backup-js-e12992febc3f9c7942f9.js"],"component---src-pages-index-js":["/component---src-pages-index-js-ba76b73faf9b13c49b7e.js"],"component---src-pages-resume-js":["/component---src-pages-resume-js-cc55ba5d0837e95934be.js"],"component---src-pages-snippets-js":["/component---src-pages-snippets-js-314b523a31e26de10a3a.js"],"component---src-pages-tags-js":["/component---src-pages-tags-js-b6cd53c7d21e3e064fd1.js"],"component---src-templates-blog-page-js":["/component---src-templates-blog-page-js-3c820d4c74001e03e229.js"],"component---src-templates-blog-post-js":["/component---src-templates-blog-post-js-06eb50339f2f3ac086e8.js"],"component---src-templates-blog-tags-js":["/component---src-templates-blog-tags-js-55b14af861a6825c50ba.js"],"component---src-templates-posts-pagination-js":["/component---src-templates-posts-pagination-js-f887a69f275fa18320d2.js"]};/*]]>*/</script><script src="/polyfill-e795261d8342deefff90.js" nomodule=""></script><script src="/component---src-templates-blog-post-js-06eb50339f2f3ac086e8.js" async=""></script><script src="/cac18b802c8b308508681dc900d8d8f756c7bdb5-c7c9c4e9ce9bf74cce02.js" async=""></script><script src="/styles-407fe62976dc5310c43e.js" async=""></script><script src="/app-5c7248fcb69374f91873.js" async=""></script><script src="/framework-b17a64ad725e0b3c1338.js" async=""></script><script src="/webpack-runtime-e0256f23ab3c5c1ffc4c.js" async=""></script></body></html>
