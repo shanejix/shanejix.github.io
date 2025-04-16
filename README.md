@@ -1,3 +1,3 @@
 # shanejix's blog ~
 
-👉[https://www.cnblogs.com/shanejix/](https://www.cnblogs.com/shanejix/)
+👉[https://shanejix.github.io/](https://shanejix.github.io/)
