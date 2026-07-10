@@ -1,0 +1,14 @@
+{
+  "name": "Your Name",
+  "short_name": "Your Name",
+  "icons": [
+    {
+      "src": "/favicon.svg",
+      "type": "image/svg+xml",
+      "sizes": "any"
+    }
+  ],
+  "theme_color": "#C4704B",
+  "background_color": "#F4F1EA",
+  "display": "standalone"
+}
