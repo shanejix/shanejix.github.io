@@ -1,10 +1,10 @@
 {
-  "name": "Your Name",
-  "short_name": "Your Name",
+  "name": "Shane Jix",
+  "short_name": "Shane Jix",
   "icons": [
     {
-      "src": "/favicon.svg",
-      "type": "image/svg+xml",
+      "src": "/favicon.jpg",
+      "type": "image/jpeg",
       "sizes": "any"
     }
   ],
